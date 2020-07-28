@@ -1,0 +1,40 @@
+---
+version: '3'
+services:
+  spring:
+    build:
+      context: ../spring/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+  micronaut-graal:
+    build:
+      context: ../micronaut-graal/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+  go-pure:
+    build:
+      context: ../go-pure/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+  go-gin:
+    build:
+      context: ../go-gin/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+
+  postgres:
+    image: postgres
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
