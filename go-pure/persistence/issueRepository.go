@@ -11,7 +11,7 @@ type issueRepository struct {
 	db *sql.DB
 }
 
-func NewIssueRepository() domain.IssueRepository {
+func NewIssueRepository(db *sql.DB) domain.IssueRepository {
 	return issueRepository{db}
 }
 

@@ -2,6 +2,7 @@ package rest
 
 import (
 	"encoding/json"
+	"errors"
 	"lizzy/medium/compare/go-pure/domain"
 	"net/http"
 	"strings"
@@ -10,144 +11,143 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-var IssueRepository domain.IssueRepository
-
-func issueHandler(w http.ResponseWriter, r *http.Request) {
-	id, hasId, err := parseIdFromUrl(r)
-	if err != nil {
-		handleError(err, w)
-		return
-	}
-	if hasId {
-		switch r.Method {
-		case http.MethodGet:
-			err = getSingle(w, id)
-		case http.MethodPut:
-			err = update(w, r, id)
-		case http.MethodPatch:
-			err = partialUpdate(w, r, id)
-		case http.MethodDelete:
-			err = delete(w, id)
-		default:
-			err = methodNotAllowed
-		}
-	} else if r.Method == http.MethodGet {
-		err = getAll(w)
-	} else if r.Method == http.MethodPost {
-		err = create(w, r)
-	}
-	if err != nil {
-		handleError(err, w)
-	}
+type IssueController struct {
+	repository domain.IssueRepository
 }
 
-func parseIdFromUrl(r *http.Request) (uuid.UUID, bool, error) {
-	p := strings.Split(r.URL.Path, "/")
-
-	if len(p) < 3 {
-		return uuid.UUID{}, false, nil
-	}
-
-	if len(p[2]) == 0 {
-		return uuid.UUID{}, false, nil
-	}
-
-	id, err := uuid.Parse(p[2])
-	if err != nil {
-		return uuid.UUID{}, false, err
-
-	}
-	return id, true, nil
-}
-
-func getSingle(w http.ResponseWriter, id uuid.UUID) error {
-	issue, err := IssueRepository.Find(id)
-	if err != nil {
-		return err
-	}
-	js, err := json.Marshal(issueToIssueDto(issue))
+func (i IssueController) readSingle(w http.ResponseWriter, r *http.Request) error {
+	issue, err := i.getIssue(r)
 	if err != nil {
 		return err
 	}
 	log.Debug("Issue %v returned", issue)
-	w.Header().Set("Content-Type", "application/json")
-	w.Write(js)
-	return nil
+	return i.writeAnswer(w, issue)
 }
 
-func getAll(w http.ResponseWriter) error {
-	issues, err := IssueRepository.FindAll()
-	if err != nil {
-		return err
-	}
-	var issueBodies []issueDto
-	for _, issue := range issues {
-		issueBodies = append(issueBodies, issueToIssueDto(issue))
-	}
-
-	js, err := json.Marshal(issueBodies)
+func (i IssueController) readAll(w http.ResponseWriter, r *http.Request) error {
+	issues, err := i.repository.FindAll()
 	if err != nil {
 		return err
 	}
 	log.Debugf("Issues %v returned", issues)
+	return i.writeAnswers(w, issues)
+}
+
+func (i IssueController) create(w http.ResponseWriter, r *http.Request) error {
+	postBody, err := i.parseBody(r)
+	if err != nil {
+		return err
+	}
+	newIssue := postBody.toIssue()
+	err = i.repository.Insert(newIssue)
+	if err != nil {
+		return err
+	}
+	log.Infof("Create issue %v", newIssue)
+	return i.writeAnswer(w, newIssue)
+}
+
+func (i IssueController) update(w http.ResponseWriter, r *http.Request) error {
+	postBody, err := i.parseBody(r)
+	if err != nil {
+		return err
+	}
+	newIssue := postBody.toIssue()
+	err = i.repository.Update(newIssue)
+	if err != nil {
+		return err
+	}
+	log.Infof("Update issue %v", newIssue)
+	return i.writeAnswer(w, newIssue)
+}
+
+func (i IssueController) partialUpdate(w http.ResponseWriter, r *http.Request) error {
+	postBody, err := i.parseBody(r)
+	if err != nil {
+		return err
+	}
+
+	oldIssue, err := i.getIssue(r)
+	if err != nil {
+		return err
+	}
+	newIssue := oldIssue.Update(postBody.Name, postBody.Description)
+	err = i.repository.Update(newIssue)
+	if err != nil {
+		return err
+	}
+	log.Infof("Update issue %v", newIssue)
+	return i.writeAnswer(w, newIssue)
+}
+
+func (i IssueController) delete(w http.ResponseWriter, r *http.Request) error {
+	id, err := i.parseId(r)
+	if err != nil {
+		return err
+	}
+	err = i.repository.Delete(id)
+	if err != nil {
+		return err
+	}
+	log.Infof("Delete issue %v", id)
+	w.WriteHeader(http.StatusOK)
+	return nil
+}
+
+func (i IssueController) getIssue(r *http.Request) (domain.Issue, error) {
+	id, err := i.parseId(r)
+	if err != nil {
+		return domain.Issue{}, err
+	}
+	return i.repository.Find(id)
+}
+
+func (i IssueController) parseId(r *http.Request) (uuid.UUID, error) {
+	p := strings.Split(r.URL.Path, "/")
+	id, err := uuid.Parse(p[2])
+	if err != nil {
+		return id, errors.New("Cannot parse id: " + err.Error())
+
+	}
+	return id, nil
+}
+
+func (i IssueController) writeAnswer(w http.ResponseWriter, issue domain.Issue) error {
+	issueDto := issueToIssueDto(issue)
+	js, err := json.Marshal(issueDto)
+	if err != nil {
+		return err
+	}
+	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(js)
 	return nil
 }
 
-func create(w http.ResponseWriter, r *http.Request) error {
-	postBody, err := parseBody(r)
+func (i IssueController) writeAnswers(w http.ResponseWriter, issues []domain.Issue) error {
+	var issueDtos []issueDto
+	for _, issue := range issues {
+		issueDtos = append(issueDtos, issueToIssueDto(issue))
+	}
+	js, err := json.Marshal(issueDtos)
 	if err != nil {
 		return err
 	}
-	newIssue := postBody.toIssue()
-	err = IssueRepository.Insert(newIssue)
-	if err != nil {
-		return err
-	}
-	log.Infof("Create issue %v", newIssue)
+	w.WriteHeader(http.StatusOK)
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(js)
 	return nil
 }
 
-func update(w http.ResponseWriter, r *http.Request, id uuid.UUID) error {
-	postBody, err := parseBody(r)
+func (i IssueController) parseBody(r *http.Request) (issueDto, error) {
+	var body issueDto
+	err := json.NewDecoder(r.Body).Decode(&body)
 	if err != nil {
-		return err
+		return body, errors.New("Cannot parse body: " + err.Error())
 	}
-	newIssue := postBody.toIssue()
-	err = IssueRepository.Update(newIssue)
-	if err != nil {
-		return err
-	}
-	log.Info("Update issue %v", newIssue)
-	return nil
+	return body, nil
 }
 
-func partialUpdate(w http.ResponseWriter, r *http.Request, id uuid.UUID) error {
-	postBody, err := parseBody(r)
-	if err != nil {
-		return err
-	}
-
-	oldIssue, err := IssueRepository.Find(id)
-	if err != nil {
-		return err
-	}
-	oldIssue = oldIssue.Update(postBody.Name, postBody.Description)
-
-	err = IssueRepository.Update(oldIssue)
-	if err != nil {
-		return err
-	}
-	log.Info("Update issue %v", oldIssue)
-	return nil
-}
-
-func delete(w http.ResponseWriter, id uuid.UUID) error {
-	err := IssueRepository.Delete(id)
-	if err != nil {
-		return err
-	}
-	log.Info("Delete issue %v", id)
-	return nil
+func NewIssueController(repository domain.IssueRepository) IssueController {
+	return IssueController{repository}
 }

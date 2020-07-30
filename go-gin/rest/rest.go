@@ -8,23 +8,20 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-func Start() {
-	r := gin.New()
-	r.Use(gin.LoggerWithConfig(gin.LoggerConfig{Output: log.New().Writer()}), gin.Recovery(), errorHandler)
-	r.GET("/issue/", readAll)
-	r.GET("/issue/:id/", readSingle)
-	r.POST("/issue/", create)
-	r.PUT("/issue/:id/", update)
-	r.PATCH("/issue/:id/", partialUpdate)
-	r.DELETE("/issue/:id/", delete)
-	r.Run()
+func NewEngine(issueController IssueController) *gin.Engine {
+	engine := gin.New()
+	engine.Use(gin.LoggerWithConfig(gin.LoggerConfig{Output: log.New().Writer()}), gin.Recovery(), errorHandler)
+	engine.GET("/issue/", issueController.readAll)
+	engine.GET("/issue/:id/", issueController.readSingle)
+	engine.POST("/issue/", issueController.create)
+	engine.PUT("/issue/:id/", issueController.update)
+	engine.PATCH("/issue/:id/", issueController.partialUpdate)
+	engine.DELETE("/issue/:id/", issueController.delete)
+	return engine
 }
 
 func errorHandler(c *gin.Context) {
 	c.Next()
-	if len(c.Errors) == 0 {
-		return
-	}
 	error := c.Errors.Last()
 	switch {
 	case error.Err == domain.IssueNotFoundError:
@@ -33,6 +30,7 @@ func errorHandler(c *gin.Context) {
 	case error.Type == gin.ErrorTypePublic:
 		log.Warnf("Error while handling request: %v", error)
 		c.JSON(http.StatusBadRequest, error)
+	case error == nil:
 	default:
 		log.Warnf("Error while handling request: %v", error)
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not process request"})

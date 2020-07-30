@@ -10,108 +10,107 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-var IssueRepository domain.IssueRepository
+type IssueController struct {
+	repository domain.IssueRepository
+}
 
-func readSingle(c *gin.Context) {
-	issue, err := getIssue(c)
+func (i IssueController) readSingle(c *gin.Context) {
+	issue, err := i.getIssue(c)
 	if err != nil {
 		c.Error(err)
 		return
 	}
 	log.Debug("Issue %v returned", issue)
-	c.JSON(http.StatusOK, issueToIssueDto(issue))
+	i.writeAnswer(c, issue)
 }
 
-func readAll(c *gin.Context) {
-	issues, err := IssueRepository.FindAll()
+func (i IssueController) readAll(c *gin.Context) {
+	issues, err := i.repository.FindAll()
 	if err != nil {
 		c.Error(err)
 		return
 	}
 	log.Debugf("Issues %v returned", issues)
-	var issueDtos []issueDto
-	for _, issue := range issues {
-		issueDtos = append(issueDtos, issueToIssueDto(issue))
-	}
-	c.JSON(http.StatusOK, issueDtos)
+	i.writeAnswers(c, issues)
 }
 
-func create(c *gin.Context) {
-	issue, err := parseBody(c)
+func (i IssueController) create(c *gin.Context) {
+	postBody, err := i.parseBody(c)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-
-	err = IssueRepository.Insert(issue.toIssue())
+	newIssue := postBody.toIssue()
+	err = i.repository.Insert(newIssue)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	log.Infof("Create issue %v", issue)
-	c.JSON(http.StatusOK, issue)
+	log.Infof("Create issue %v", newIssue)
+	i.writeAnswer(c, newIssue)
 }
 
-func update(c *gin.Context) {
-	issue, err := parseBody(c)
+func (i IssueController) update(c *gin.Context) {
+	postBody, err := i.parseBody(c)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	err = IssueRepository.Update(issue.toIssue())
+	newIssue := postBody.toIssue()
+	err = i.repository.Update(newIssue)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	log.Infof("Create issue %v", issue)
-	c.JSON(http.StatusOK, issue)
+	log.Infof("Update issue %v", newIssue)
+	i.writeAnswer(c, newIssue)
 }
 
-func partialUpdate(c *gin.Context) {
-	issue, err := parseBody(c)
+func (i IssueController) partialUpdate(c *gin.Context) {
+	postBody, err := i.parseBody(c)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	oldIssue, err := getIssue(c)
+	oldIssue, err := i.getIssue(c)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	oldIssue = oldIssue.Update(issue.Name, issue.Description)
-	err = IssueRepository.Update(oldIssue)
+	newIssue := oldIssue.Update(postBody.Name, postBody.Description)
+	err = i.repository.Update(newIssue)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	log.Info("Update issue %v", issue)
-	c.JSON(http.StatusOK, oldIssue)
+	log.Infof("Update issue %v", newIssue)
+	i.writeAnswer(c, newIssue)
 }
 
-func delete(c *gin.Context) {
-	id, err := parseId(c)
+func (i IssueController) delete(c *gin.Context) {
+	id, err := i.parseId(c)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	err = IssueRepository.Delete(id)
+	err = i.repository.Delete(id)
 	if err != nil {
 		c.Error(err)
 		return
 	}
-	log.Info("Delete issue %v", id)
+	log.Infof("Delete issue %v", id)
 	c.Status(http.StatusOK)
 }
 
-func getIssue(c *gin.Context) (domain.Issue, error) {
-	id, err := parseId(c)
+func (i IssueController) getIssue(c *gin.Context) (domain.Issue, error) {
+	id, err := i.parseId(c)
 	if err != nil {
 		return domain.Issue{}, err
 	}
-	return IssueRepository.Find(id)
+	return i.repository.Find(id)
 }
 
-func parseId(c *gin.Context) (uuid.UUID, error) {
+func (i IssueController) parseId(c *gin.Context) (uuid.UUID, error) {
 	id, err := uuid.Parse(c.Param("id"))
 	if err != nil {
 		return id, &gin.Error{
@@ -119,4 +118,31 @@ func parseId(c *gin.Context) (uuid.UUID, error) {
 			Type: gin.ErrorTypePublic}
 	}
 	return id, nil
+}
+
+func (i IssueController) writeAnswer(c *gin.Context, issue domain.Issue) {
+	issueDto := issueToIssueDto(issue)
+	c.JSON(http.StatusOK, issueDto)
+}
+
+func (i IssueController) writeAnswers(c *gin.Context, issues []domain.Issue) {
+	var issueDtos []issueDto
+	for _, issue := range issues {
+		issueDtos = append(issueDtos, issueToIssueDto(issue))
+	}
+	c.JSON(http.StatusOK, issueDtos)
+}
+
+func (i IssueController) parseBody(c *gin.Context) (issueDto, error) {
+	var issueDto issueDto
+	if err := c.ShouldBindJSON(&issueDto); err != nil {
+		return issueDto, &gin.Error{
+			Err:  errors.New("Cannot parse body: " + err.Error()),
+			Type: gin.ErrorTypePublic}
+	}
+	return issueDto, nil
+}
+
+func NewIssueController(repository domain.IssueRepository) IssueController {
+	return IssueController{repository}
 }
