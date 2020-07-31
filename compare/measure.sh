@@ -75,6 +75,7 @@ function compile(){
         ./gradlew assemble
     elif [ "$2" = "npm" ]
     then
+        npm install
         npm run build
     elif [ "$2" = "go" ]
     then
@@ -230,11 +231,14 @@ function cleanDocker() {
     docker volume prune -f
 }
 
+#Check all needed software is installed
+sudo apt-get install golang-1.14-go jmeter docker docker-compose npm openjdk-11-jdk
+
 # Remove the old result file
 rm -f results.csv
 #check "micronaut-graal"  "gradle"
 #check "spring"           "mvn"
-check "node" 		 "npm"
+check "node"             "npm"
 check "go-pure"          "go"
 check "go-gin"           "go"
 cat results.csv;
