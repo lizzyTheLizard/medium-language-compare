@@ -11,7 +11,7 @@ type issueRepository struct {
 	db *gorm.DB
 }
 
-func NewIssueRepository() domain.IssueRepository {
+func NewIssueRepository(db *gorm.DB) domain.IssueRepository {
 	return issueRepository{db}
 }
 

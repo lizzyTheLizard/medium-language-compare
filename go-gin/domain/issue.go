@@ -1,8 +1,6 @@
 package domain
 
 import (
-	"errors"
-
 	"github.com/google/uuid"
 )
 
@@ -37,13 +35,3 @@ func (i Issue) Update(newName string, newDescription string) Issue {
 func NewIssue(id uuid.UUID, name string, description string) Issue {
 	return Issue{id, name, description}
 }
-
-type IssueRepository interface {
-	Find(uuid.UUID) (Issue, error)
-	FindAll() (issues []Issue, err error)
-	Update(Issue) error
-	Insert(Issue) error
-	Delete(uuid.UUID) error
-}
-
-var IssueNotFoundError = errors.New("Issue not found")
