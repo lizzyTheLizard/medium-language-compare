@@ -29,6 +29,13 @@ services:
       - postgres
     ports:
       - "8080:8080"
+  node:
+    build:
+      context: ../node/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
 
   postgres:
     image: postgres

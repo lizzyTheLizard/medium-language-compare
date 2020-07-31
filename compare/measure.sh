@@ -44,30 +44,23 @@ function clean() {
     if [ "$2" = "mvn" ]
     then
         ./mvnw clean
-        if [ $? -ne 0 ]
-        then
-            popd
-            fail "Could not clean folder $1"
-        fi
     elif [ "$2" = "gradle" ]
     then
         ./gradlew clean
-        if [ $? -ne 0 ]
-        then
-            popd
-            fail "Could not build folder $1"
-        fi
+    elif [ "$2" = "npm" ]
+    then
+        npm run clean
     elif [ "$2" = "go" ]
     then
         go clean
-        if [ $? -ne 0 ]
-        then
-            popd
-            fail "Could not clean folder $1"
-        fi
     else
         popd
-        fail "Do now know how to build $2"
+        fail "Do not know how to build $2"
+    fi
+    if [ $? -ne 0 ]
+    then
+        popd
+        fail "Could not clean folder $1"
     fi
     popd
 }
@@ -77,31 +70,24 @@ function compile(){
     if [ "$2" = "mvn" ]
     then
         ./mvnw package
-        if [ $? -ne 0 ]
-        then
-            popd
-            fail "Could not build folder $1"
-        fi
     elif [ "$2" = "gradle" ]
     then
         ./gradlew assemble
-        if [ $? -ne 0 ]
-        then
-            popd
-            fail "Could not build folder $1"
-        fi
+    elif [ "$2" = "npm" ]
+    then
+        npm run build
     elif [ "$2" = "go" ]
     then
         export CGO_ENABLED=0
         go build
-        if [ $? -ne 0 ]
-        then
-            popd
-            fail "Could not build folder $1"
-        fi
     else
         popd
-        fail "Do now know how to build $2"
+        fail "Do not know how to build $2"
+    fi
+    if [ $? -ne 0 ]
+    then
+        popd
+        fail "Could not build folder $1"
     fi
     popd
 }
@@ -150,13 +136,13 @@ function startContainer() {
     for (( i=0; i<100; i++))
     do
         sleep 0.3
-        curl -s http://localhost:8080/issue/550e8400-e29b-11d4-a716-446655440000/ | grep "This is a test" > /dev/null
+        curl -s http://localhost:8080/issue/550e8400-e29b-41d4-a716-446655440000/ | grep "This is a test" > /dev/null
         if [ $? -eq 0 ]
         then
             return;
         fi;
     done
-    curl http://localhost:8080/issue/550e8400-e29b-11d4-a716-446655440000/ -v
+    curl http://localhost:8080/issue/550e8400-e29b-41d4-a716-446655440000/ -v
     fail "Container could not start"
 }
 
@@ -170,7 +156,7 @@ function checkContainer() {
 
     #Create a new entry
     curl -X POST http://localhost:8080/issue/ \
-        -d '{"id":"550e8400-e29b-11d4-a728-446655440000","name":"Test 123", "description":"Test 28"}' \
+        -d '{"id":"550e8400-e29b-41d4-a728-446655440000","name":"Test 123", "description":"Test 28"}' \
         -H "Content-Type: application/json" 
     curl -s http://localhost:8080/issue/ | grep "Test 28" > /dev/null
     if [ $? -ne 0 ]
@@ -180,7 +166,7 @@ function checkContainer() {
     fi;
 
     #Patch new entry
-    curl -X PATCH http://localhost:8080/issue/550e8400-e29b-11d4-a728-446655440000/ \
+    curl -X PATCH http://localhost:8080/issue/550e8400-e29b-41d4-a728-446655440000/ \
         -d '{"description":"Test NEW"}' \
        	-H "Content-Type: application/json" 
     curl -s http://localhost:8080/issue/ | grep "Test NEW" > /dev/null
@@ -191,7 +177,7 @@ function checkContainer() {
     fi;
 
     #Delete new entry
-    curl -X DELETE http://localhost:8080/issue/550e8400-e29b-11d4-a728-446655440000/
+    curl -X DELETE http://localhost:8080/issue/550e8400-e29b-41d4-a728-446655440000/
     curl -s http://localhost:8080/issue/ | grep "Test NEW" > /dev/null
     if [ $? -eq 0 ]
     then
@@ -246,8 +232,9 @@ function cleanDocker() {
 
 # Remove the old result file
 rm -f results.csv
-check "micronaut-graal"  "gradle"
-check "spring"           "mvn"
+#check "micronaut-graal"  "gradle"
+#check "spring"           "mvn"
+check "node" 		 "npm"
 check "go-pure"          "go"
 check "go-gin"           "go"
 cat results.csv;
