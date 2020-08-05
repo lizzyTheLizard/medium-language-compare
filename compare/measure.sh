@@ -9,10 +9,10 @@ STARTUP_TIMES=1
 LOAD_TIMES=1
 
 function check(){
-    prepareDocker
+    prepareDocker "$1" "$3"
     compileTime "$1" "$2"
     startup     "$1"
-    load        "$1"
+    load        "$1" "$3"
     cleanDocker "$1"
 }
 
@@ -21,6 +21,17 @@ function prepareDocker () {
     docker-compose stop
     docker-compose rm -f
     docker-compose up --build -d postgres
+    if [ "$2" = "" ]
+    then
+        echo "No setup is needed"
+    else
+        echo "Setup DB"
+        docker-compose run $1 $2
+        if [ $? -ne 0 ]
+        then
+            fail "Could not prepare DB $1"
+        fi
+    fi
 }
 
 function compileTime(){
@@ -53,6 +64,9 @@ function clean() {
     elif [ "$2" = "go" ]
     then
         go clean
+    elif [ "$2" = "none" ]
+    then
+	echo "No build needed"
     else
         popd
         fail "Do not know how to build $2"
@@ -81,6 +95,9 @@ function compile(){
     then
         export CGO_ENABLED=0
         go build
+    elif [ "$2" = "none" ]
+    then
+	echo "No build needed"
     else
         popd
         fail "Do not know how to build $2"
@@ -195,9 +212,9 @@ function fail() {
 function load() {
     for (( load=0; load<LOAD_TIMES; load++))
     do
-        prepareForLoad "$1"
+        prepareForLoad "$1" "$2"
         startNS=$(date +"%s%N")
-        jmeter -n -t loadtest.jmx -j jmeter.out -l jmeter.log
+        jmeter -n -t loadtest.jmx -j jmeter.out -l jmeter.log -L DEBUG
         endNS=$(date +"%s%N")
         memory=$(docker stats --format "{{.MemUsage}}" --no-stream "compare_$1_1" | awk 'match($0,/[0-9\.]+/) {print substr($0, RSTART, RLENGTH)}')
         loadtime=$(echo "scale=2;($endNS-$startNS)/1000000000" | bc)
@@ -216,9 +233,7 @@ function load() {
 
 function prepareForLoad() {
     # We have to freshly set up the container (incl db) to avoid follow up effects
-    docker-compose stop
-    docker-compose rm -f
-    docker-compose up --build -d postgres
+    prepareDocker "$1" "$2"
     sleep 10;
     startContainer "$1"
 }
@@ -232,13 +247,20 @@ function cleanDocker() {
 }
 
 #Check all needed software is installed
-sudo apt-get install golang-1.14-go jmeter docker docker-compose npm openjdk-11-jdk
+#sudo apt-get install \
+#	jmeter docker docker-compose  \
+#	golang-1.14-go  \
+#	npm \
+#	openjdk-11-jdk \
+#	python3-venv
+
 
 # Remove the old result file
 rm -f results.csv
+check "python-django"     "none"    "python manage.py migrate"
 #check "micronaut-graal"  "gradle"
 #check "spring"           "mvn"
-check "node"             "npm"
-check "go-pure"          "go"
-check "go-gin"           "go"
+#check "node"             "npm"
+#check "go-pure"          "go"
+#check "go-gin"           "go"
 cat results.csv;

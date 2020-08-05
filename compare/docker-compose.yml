@@ -36,6 +36,14 @@ services:
       - postgres
     ports:
       - "8080:8080"
+  python-django:
+    build:
+      context: ../python-django/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+
 
   postgres:
     image: postgres
