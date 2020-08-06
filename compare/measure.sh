@@ -66,7 +66,7 @@ function clean() {
         go clean
     elif [ "$2" = "none" ]
     then
-	echo "No build needed"
+        echo "No build needed"
     else
         popd
         fail "Do not know how to build $2"
@@ -97,7 +97,7 @@ function compile(){
         go build
     elif [ "$2" = "none" ]
     then
-	echo "No build needed"
+        echo "No build needed"
     else
         popd
         fail "Do not know how to build $2"
@@ -257,10 +257,9 @@ function cleanDocker() {
 
 # Remove the old result file
 rm -f results.csv
-check "python-django"     "none"    "python manage.py migrate"
+#check "python-django"    "none"    "python manage.py migrate"
 #check "micronaut-graal"  "gradle"
 #check "spring"           "mvn"
-#check "node"             "npm"
-#check "go-pure"          "go"
-#check "go-gin"           "go"
+check "node"             "npm"
+check "go"               "go"
 cat results.csv;

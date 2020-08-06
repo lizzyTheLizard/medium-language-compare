@@ -2,7 +2,7 @@ package persistence
 
 import (
 	"database/sql"
-	"lizzy/medium/compare/go-pure/domain"
+	"lizzy/medium/compare/domain"
 
 	"github.com/google/uuid"
 )
@@ -16,7 +16,7 @@ func NewIssueRepository(db *sql.DB) domain.IssueRepository {
 }
 
 func (i issueRepository) Find(id uuid.UUID) (domain.Issue, error) {
-	rows, err := i.db.Query("SELECT id, name, description FROM issue WHERE id = $1", id.String())
+	rows, err := i.db.Query("SELECT name, description FROM issue WHERE id = $1", id)
 	if err != nil {
 		return domain.Issue{}, err
 	}
@@ -24,13 +24,12 @@ func (i issueRepository) Find(id uuid.UUID) (domain.Issue, error) {
 	if !rows.Next() {
 		return domain.Issue{}, domain.IssueNotFoundError
 	}
-	var issueModel issueModel
-	err = rows.Scan(&issueModel.id, &issueModel.name, &issueModel.description)
+	var name, description string
+	err = rows.Scan(&name, &description)
 	if err != nil {
 		return domain.Issue{}, err
 	}
-	err = rows.Err()
-	return issueModel.toIssue(), err
+	return domain.NewIssue(id, name, description), rows.Err()
 }
 
 func (i issueRepository) FindAll() ([]domain.Issue, error) {
@@ -42,12 +41,13 @@ func (i issueRepository) FindAll() ([]domain.Issue, error) {
 	defer rows.Close()
 
 	for rows.Next() {
-		var issueModel issueModel
-		err = rows.Scan(&issueModel.id, &issueModel.name, &issueModel.description)
+		var name, description string
+		var id uuid.UUID
+		err = rows.Scan(&id, &name, &description)
 		if err != nil {
 			return issues, err
 		}
-		issues = append(issues, issueModel.toIssue())
+		issues = append(issues, domain.NewIssue(id, name, description))
 	}
 	err = rows.Err()
 	return issues, err

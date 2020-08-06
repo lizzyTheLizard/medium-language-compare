@@ -6,15 +6,14 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	"lizzy/medium/compare/go-gin/persistence"
-	"lizzy/medium/compare/go-gin/rest"
+	"lizzy/medium/compare/persistence"
+	"lizzy/medium/compare/rest"
 )
 
 // Injectors from wire.go:
 
-func InitializeEngine() (*gin.Engine, func()) {
-	db, cleanup := persistence.NewDB()
+func InitializeEngine() (rest.Engine, func()) {
+	db, cleanup := persistence.Connect()
 	issueRepository := persistence.NewIssueRepository(db)
 	issueController := rest.NewIssueController(issueRepository)
 	engine := rest.NewEngine(issueController)

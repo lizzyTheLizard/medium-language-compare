@@ -15,16 +15,9 @@ services:
       - postgres
     ports:
       - "8080:8080"
-  go-pure:
+  go:
     build:
-      context: ../go-pure/
-    depends_on:
-      - postgres
-    ports:
-      - "8080:8080"
-  go-gin:
-    build:
-      context: ../go-gin/
+      context: ../go/
     depends_on:
       - postgres
     ports:
