@@ -43,6 +43,13 @@ services:
       - postgres
     ports:
       - "8080:8080"
+  python-falcon:
+    build:
+      context: ../python-falcon/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
 
   postgres:
     image: postgres
