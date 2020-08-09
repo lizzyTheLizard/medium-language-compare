@@ -1,0 +1,21 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "devStart": "nodemon ./src/main.js",
+    "start": "node ./src/main.js",
+    "build": "",
+    "clean": "rm -rf build"
+  },
+  "author": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.3.0",
+    "uuidv4": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

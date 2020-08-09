@@ -22,9 +22,16 @@ services:
       - postgres
     ports:
       - "8080:8080"
-  node:
+  node-ts:
     build:
-      context: ../node/
+      context: ../node-ts/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+  node-js:
+    build:
+      context: ../node-js/
     depends_on:
       - postgres
     ports:
@@ -36,7 +43,6 @@ services:
       - postgres
     ports:
       - "8080:8080"
-
 
   postgres:
     image: postgres

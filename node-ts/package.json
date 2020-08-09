@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "node-ts",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,7 +10,6 @@
     "clean": "rm -rf build"
   },
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "@types/pg": "^7.14.4",
     "express": "^4.17.1",
