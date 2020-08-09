@@ -1,4 +1,3 @@
-import express = require('express');
 import {IssueController} from './rest/issueController'
 import {IssueRepository} from './persistence/issueRepository'
 import {Engine} from './rest/engine'
@@ -10,5 +9,5 @@ connect().then(client => {
     const issueEndpoint = new IssueController(issueRepository);
     const engine = new Engine(issueEndpoint);
     engine.run();
-}).catch(e => console.error("Cannot start application",e))
+}).catch(e => console.error('Cannot start application',e))
 

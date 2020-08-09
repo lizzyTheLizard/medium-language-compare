@@ -35,12 +35,14 @@ export class IssueRepository implements IssueRepositoryInterface {
         return issue;
     }
 
-    async delete(id: string) {
+    async delete(id: string): void {
         await this.client
             .query('DELETE FROM issue WHERE id=$1', [id])
             .then();
     }
 
+    /* eslint @typescript-eslint/no-explicit-any: "off" */
+    /* eslint @typescript-eslint/explicit-module-boundary-types: "off" */
     private rowToIssue(row: any): Issue {
         return new Issue(row.id, row.name, row.description);
     }

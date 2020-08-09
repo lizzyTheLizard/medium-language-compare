@@ -3,9 +3,9 @@ import { isUuid } from 'uuidv4';
 import { InvalidIdException } from './issueController';
 
 export class IssueDto {
-    public id : string = "";
-    public name : string = "";
-    public description: string = "";
+    public id  = '';
+    public name  = '';
+    public description = '';
 
     static fromIssue(issue : Issue) : IssueDto{
         const issueDto = new IssueDto();
@@ -15,12 +15,13 @@ export class IssueDto {
         return issueDto;
     }
 
+    /* eslint @typescript-eslint/no-explicit-any: "off" */
+    /* eslint @typescript-eslint/explicit-module-boundary-types: "off" */
     static fromJson(json: any): Issue {
-        const issueDto = new IssueDto();
         console.log(json)
-		if(!isUuid(json.id)){
-			throw new InvalidIdException(json.id);
-		}
+        if (!isUuid(json.id)){
+            throw new InvalidIdException(json.id);
+        }
         return new Issue(json.id, json.name, json.description);
     }
 }

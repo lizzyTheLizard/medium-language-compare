@@ -12,11 +12,12 @@ class IssueDto {
     }
 
     static fromJson(json) {
-		if(!uuid.isUuid(json.id)){
-			throw new InvalidIdException(json.id);
-		}
+        if (!uuid.isUuid(json.id)){
+            throw new InvalidIdException(json.id);
+        }
         return new Issue(json.id, json.name, json.description);
     }
 }
 
 module.exports = IssueDto
+

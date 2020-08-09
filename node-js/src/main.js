@@ -8,4 +8,4 @@ connect.connect().then(client => {
     const issueController = new IssueController(issueRepository);
     const engine = new Engine(issueController);
     engine.run();
-}).catch(e => console.error("Cannot start application",e));
+}).catch(e => console.error('Cannot start application',e));

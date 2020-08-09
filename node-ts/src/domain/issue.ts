@@ -17,7 +17,7 @@ export class Issue {
         return this.description
     }
 
-	update(name: string, description: string) : Issue {
+    update(name: string, description: string) : Issue {
         return new Issue(
             this.id,
             Issue.isEmpty(name) ? this.name : name,

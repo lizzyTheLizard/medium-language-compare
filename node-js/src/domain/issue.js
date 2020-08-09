@@ -17,7 +17,7 @@ class Issue {
         return this.description
     }
 
-	update(name, description) {
+    update(name, description) {
         return new Issue(
             this.id,
             Issue.isEmpty(name) ? this.name : name,

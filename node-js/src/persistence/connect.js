@@ -1,15 +1,16 @@
 const { Client } = require('pg');
 
 const clientConfig = {
-    user: "postgres",
-    database: "postgres",
-    password: "postgres",
+    user: 'postgres',
+    database: 'postgres',
+    password: 'postgres',
     port: 5432,
-    host: "postgres",
+    host: 'postgres',
 };
 
 exports.connect = async function() {
     console.log('Try to connect to DB', clientConfig)
+    var lastError;
     for (var index = 0; index < 10; index++) {
         const client = new Client(clientConfig);
         try {
