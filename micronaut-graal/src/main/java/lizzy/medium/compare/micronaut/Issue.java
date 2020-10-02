@@ -1,14 +1,13 @@
 package lizzy.medium.compare.micronaut;
 
+import io.micronaut.data.annotation.MappedEntity;
+import io.micronaut.data.annotation.Id;
+import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.util.UUID;
-
-@Entity
+@MappedEntity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

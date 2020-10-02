@@ -9,10 +9,10 @@ STARTUP_TIMES=1
 LOAD_TIMES=1
 
 function check(){
-    prepareDocker "$1" "$3"
-    compileTime "$1" "$2"
+    prepareDocker "$1" "$4"
+    compileTime "$1" "$2" "$3"
     startup     "$1"
-    load        "$1" "$3"
+    load        "$1" "$4"
     cleanDocker "$1"
 }
 
@@ -42,7 +42,7 @@ function compileTime(){
 
         #Build the application and store the time needed to results
         startNS=$(date +"%s%N")
-        compile "$1" "$2"
+        compile "$1" "$2" "$3"
         buildImage "$1"
         endNS=$(date +"%s%N")
         compiletime=$(echo "scale=2;($endNS-$startNS)/1000000000" | bc)
@@ -86,7 +86,7 @@ function compile(){
         ./mvnw package
     elif [ "$2" = "gradle" ]
     then
-        ./gradlew assemble
+        ./gradlew $3
     elif [ "$2" = "npm" ]
     then
         npm install
@@ -258,13 +258,13 @@ function cleanDocker() {
 # Remove the old result file
 rm -f results.csv
 #check "go"               "go"
-#check "micronaut-jdk"    "gradle"
-check "micronaut-graal"  "gradle"
+#check "micronaut-jdk"    "gradle" "assemble"
+check "micronaut-graal"  "gradle" "dockerBuildNative"
 
 exit
 
 check "python-falcon"    "none"
-check "python-django"    "none"    "python manage.py migrate"
+check "python-django"    "none"    "" "python manage.py migrate"
 check "spring"           "mvn"
 check "node-js"          "npm"
 check "node-ts"          "npm"

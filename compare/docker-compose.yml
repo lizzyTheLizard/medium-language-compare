@@ -16,8 +16,7 @@ services:
     ports:
       - "8080:8080"
   micronaut-graal:
-    build:
-      context: ../micronaut-graal/
+    image: micronaut-graal:latest
     depends_on:
       - postgres
     ports:
