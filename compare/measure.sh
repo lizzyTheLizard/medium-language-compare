@@ -1,12 +1,11 @@
 #!/bin/bash
-#TODO Enable
-#COMPILE_TIMES=30
-#STARTUP_TIMES=30
-#LOAD_TIMES=30
+COMPILE_TIMES=30
+STARTUP_TIMES=30
+LOAD_TIMES=30
 
-COMPILE_TIMES=1
-STARTUP_TIMES=1
-LOAD_TIMES=1
+#COMPILE_TIMES=1
+#STARTUP_TIMES=1
+#LOAD_TIMES=1
 
 function check(){
     prepareDocker "$1" "$4"
@@ -257,15 +256,12 @@ function cleanDocker() {
 
 # Remove the old result file
 rm -f results.csv
-#check "go"               "go"
-#check "micronaut-jdk"    "gradle" "assemble"
-check "micronaut-graal"  "gradle" "dockerBuildNative"
-
-exit
-
-check "python-falcon"    "none"
-check "python-django"    "none"    "" "python manage.py migrate"
-check "spring"           "mvn"
-check "node-js"          "npm"
-check "node-ts"          "npm"
+check "go"              "go"
+check "micronaut-jdk"   "gradle"  "assemble"
+check "micronaut-graal" "gradle"  "dockerBuildNative"
+check "spring"          "mvn"
+check "node-js"         "npm"
+check "node-ts"         "npm"
+check "python-falcon"   "none"
+check "python-django"   "none" "" "python manage.py migrate"
 cat results.csv;
