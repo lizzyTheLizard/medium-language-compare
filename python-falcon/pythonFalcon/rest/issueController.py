@@ -30,7 +30,7 @@ class IssueController(object):
 
     def on_patch_single(self, req, resp, id):
         issue = self.__repository.findSingle(id)
-        issue = issue.update(req.media.get("name", None), req.media('description', None))
+        issue = issue.update(req.media.get("name", None), req.media.get('description', None))
         output = self.__repository.update(issue)
         resp.body = json.dumps(self.__issueToDict(output))
         resp.status = falcon.HTTP_200
