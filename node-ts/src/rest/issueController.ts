@@ -10,7 +10,7 @@ export class IssueController {
     public constructor(private readonly issueRepository: IssueRepository) {
     }
 
-    async getAll(req: express.Request, res: express.Response, next: express.NextFunction): void {
+    async getAll(req: express.Request, res: express.Response, next: express.NextFunction): Promise<void> {
         try {
             const issues = await this.issueRepository.findAll();
             const issueDtos = issues.map(issue => IssueDto.fromIssue(issue));
@@ -19,8 +19,8 @@ export class IssueController {
             next(error);
         }
     }
-	
-    async getSingle(req: express.Request, res: express.Response, next: express.NextFunction): void {
+
+    async getSingle(req: express.Request, res: express.Response, next: express.NextFunction): Promise<void> {
         try {
             const id = this.getId(req);
             const issue = await this.issueRepository.findSingle(id);
@@ -30,8 +30,8 @@ export class IssueController {
             next(error);
         }
     }
-	
-    async create(req: express.Request, res: express.Response, next: express.NextFunction): void {
+
+    async create(req: express.Request, res: express.Response, next: express.NextFunction): Promise<void> {
         try {
             const postBody = IssueDto.fromJson(req.body);
             const newIssue = await this.issueRepository.create(postBody)
@@ -40,8 +40,8 @@ export class IssueController {
             next(error);
         }
     }
-	
-    async update(req: express.Request, res: express.Response, next: express.NextFunction): void {
+
+    async update(req: express.Request, res: express.Response, next: express.NextFunction): Promise<void> {
         try {
             const postBody = IssueDto.fromJson(req.body);
             const newIssue = await this.issueRepository.update(postBody)
@@ -50,8 +50,8 @@ export class IssueController {
             next(error);
         }
     }
-	
-    async partialUpdate(req: express.Request, res: express.Response, next: express.NextFunction): void {
+
+    async partialUpdate(req: express.Request, res: express.Response, next: express.NextFunction): Promise<void> {
         try {
             const id = this.getId(req);
             const oldIssue = await this.issueRepository.findSingle(id);
@@ -62,8 +62,8 @@ export class IssueController {
             next(error);
         }
     }
-	
-    async delete(req: express.Request, res: express.Response, next: express.NextFunction): void {
+
+    async delete(req: express.Request, res: express.Response, next: express.NextFunction): Promise<void> {
         try {
             const id = this.getId(req);
             await this.issueRepository.delete(id);
