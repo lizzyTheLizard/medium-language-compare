@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: micronaut-graal
+    name: micronaut-jdk
 datasources:
   default:
     url: jdbc:postgresql://postgres:5432/postgres

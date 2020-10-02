@@ -8,6 +8,13 @@ services:
       - postgres
     ports:
       - "8080:8080"
+  micronaut-jdk:
+    build:
+      context: ../micronaut-jdk/
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
   micronaut-graal:
     build:
       context: ../micronaut-graal/

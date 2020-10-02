@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: lizzy.medium.compare.micronaut
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, data, data-jdbc, graalvm, gradle, http-client, java, java-application, jdbc-tomcat, junit, logback, netty-server, postgres, readme, shade, testcontainers, yaml]

@@ -257,11 +257,15 @@ function cleanDocker() {
 
 # Remove the old result file
 rm -f results.csv
+#check "go"               "go"
+#check "micronaut-jdk"    "gradle"
+check "micronaut-graal"  "gradle"
+
+exit
+
 check "python-falcon"    "none"
 check "python-django"    "none"    "python manage.py migrate"
-#check "micronaut-graal"  "gradle"
-#check "spring"           "mvn"
-#check "node-js"          "npm"
-#check "node-ts"          "npm"
-#check "go"               "go"
+check "spring"           "mvn"
+check "node-js"          "npm"
+check "node-ts"          "npm"
 cat results.csv;
