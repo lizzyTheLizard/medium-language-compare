@@ -213,7 +213,10 @@ function load() {
     do
         prepareForLoad "$1" "$2"
         startNS=$(date +"%s%N")
-        jmeter -n -t loadtest.jmx -j jmeter.out -l jmeter.log -L DEBUG
+        docker run --rm --network  compare_default -i -v ${PWD}:${PWD} -w ${PWD} justb4/jmeter:5.3 \
+            -Dlog_level.jmeter=DEBUG \
+            -JTARGET_HOST=$1 \
+            -n -t loadtest.jmx -l jmeter.log -j jmeter.out
         endNS=$(date +"%s%N")
         memory=$(docker stats --format "{{.MemUsage}}" --no-stream "compare_$1_1" | awk 'match($0,/[0-9\.]+/) {print substr($0, RSTART, RLENGTH)}')
         loadtime=$(echo "scale=2;($endNS-$startNS)/1000000000" | bc)
@@ -245,15 +248,41 @@ function cleanDocker() {
     docker volume prune -f
 }
 
-#Check all needed software is installed
-#sudo apt-get install \
-#	jmeter docker docker-compose  \
-#	golang-1.14-go  \
-#	npm \
-#	openjdk-11-jdk \
-#	python3-venv
+
+function installSoftware() {
+  #Check all needed software is installed
+  sudo apt-get install -y zip unzip
+
+  if [ -d "/home/$USER/.sdkman" ]
+  then
+    echo "sdkman found"
+    source ~/.sdkman/bin/sdkman-init.sh
+  else
+    curl -s "https://get.sdkman.io" | bash
+    source ~/.sdkman/bin/sdkman-init.sh
+  fi;
+
+  /home/$USER/.sdkman/bin/sdk install java 20.2.0.r11-grl
+  sudo snap install --classic go
+  sudo snap install --classic node
+  sudo snap install docker
+
+  if groups | grep docker
+  then
+    echo "already in group docker"
+  else
+    #Enable docker for all users
+    sudo snap connect docker:home
+    sudo addgroup --system docker
+    sudo adduser $USER docker
+    newgrp docker
+    sudo snap disable docker
+    sudo snap enable docker
+  fi;
+}
 
 
+installSoftware
 # Remove the old result file
 rm -f results.csv
 check "go"              "go"
