@@ -35,7 +35,6 @@ dependencies {
     testImplementation(platform("org.testcontainers:testcontainers-bom:1.14.3"))
     testRuntimeOnly("org.testcontainers:postgresql")
     compileOnly('org.projectlombok:lombok:1.18.12')
-    compileOnly('jakarta.persistence:jakarta.persistence-api:2.2.3')
 }
 
 mainClassName = "lizzy.medium.compare.micronaut.Application"

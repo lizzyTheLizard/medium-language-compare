@@ -35,7 +35,7 @@ export class IssueRepository implements IssueRepositoryInterface {
         return issue;
     }
 
-    async delete(id: string): void {
+    async delete(id: string): Promise<void> {
         await this.client
             .query('DELETE FROM issue WHERE id=$1', [id])
             .then();
