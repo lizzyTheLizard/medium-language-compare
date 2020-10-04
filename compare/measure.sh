@@ -213,7 +213,10 @@ function load() {
     do
         prepareForLoad "$1" "$2"
         startNS=$(date +"%s%N")
-        jmeter -n -t loadtest.jmx -j jmeter.out -l jmeter.log -L DEBUG
+        docker run --rm --network  compare_default -i -v ${PWD}:${PWD} -w ${PWD} justb4/jmeter:5.3 \
+            -Dlog_level.jmeter=DEBUG \
+            -JTARGET_HOST=$1 \
+            -n -t loadtest.jmx -l jmeter.log -j jmeter.out
         endNS=$(date +"%s%N")
         memory=$(docker stats --format "{{.MemUsage}}" --no-stream "compare_$1_1" | awk 'match($0,/[0-9\.]+/) {print substr($0, RSTART, RLENGTH)}')
         loadtime=$(echo "scale=2;($endNS-$startNS)/1000000000" | bc)
@@ -252,15 +255,14 @@ function installSoftware() {
 
   if [ -d "/home/$USER/.sdkman" ]
   then
-    echo "sdman found"
-    exit 0
+    echo "sdkman found"
+    source ~/.sdkman/bin/sdkman-init.sh
   else
-    exit -1
     curl -s "https://get.sdkman.io" | bash
     source ~/.sdkman/bin/sdkman-init.sh
   fi;
 
-  sdk install java 20.2.0.r11-grl
+  /home/$USER/.sdkman/bin/sdk install java 20.2.0.r11-grl
   sudo snap install --classic go
   sudo snap install --classic node
   sudo snap install docker
