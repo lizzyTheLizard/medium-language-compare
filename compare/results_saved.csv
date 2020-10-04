@@ -1048,153 +1048,153 @@ python-falcon, Memory Usage (Load), 31.02
 python-falcon, Load Time, 17.69
 python-falcon, Memory Usage (Load), 31.12
 python-falcon, Load Time, 17.55
-python-django, Compile time, 1.96
-python-django, Compile time, 1.97
-python-django, Compile time, 2.03
-python-django, Compile time, 2.05
-python-django, Compile time, 2.05
-python-django, Compile time, 2.08
-python-django, Compile time, 1.95
-python-django, Compile time, 1.95
-python-django, Compile time, 1.99
-python-django, Compile time, 1.88
-python-django, Compile time, 1.94
-python-django, Compile time, 1.94
-python-django, Compile time, 1.93
-python-django, Compile time, 1.91
-python-django, Compile time, 1.90
-python-django, Compile time, 1.92
-python-django, Compile time, 1.96
-python-django, Compile time, 1.97
-python-django, Compile time, 1.93
-python-django, Compile time, 1.96
-python-django, Compile time, 2.04
-python-django, Compile time, 2.01
-python-django, Compile time, 1.97
-python-django, Compile time, 1.95
-python-django, Compile time, 1.96
-python-django, Compile time, 1.95
-python-django, Compile time, 1.86
-python-django, Compile time, 1.89
-python-django, Compile time, 1.97
-python-django, Compile time, 1.94
-python-django, Startup time, 3.98
-python-django, Memory Usage (Startup), 50.1
-python-django, Startup time, 3.85
-python-django, Memory Usage (Startup), 49.86
-python-django, Startup time, 3.81
-python-django, Memory Usage (Startup), 49.96
-python-django, Startup time, 3.83
-python-django, Memory Usage (Startup), 50.03
-python-django, Startup time, 3.82
-python-django, Memory Usage (Startup), 49.99
-python-django, Startup time, 3.91
+python-django, Compile time, 5.01
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.57
+python-django, Compile time, 1.58
+python-django, Compile time, 1.57
+python-django, Compile time, 1.59
+python-django, Compile time, 1.59
+python-django, Compile time, 1.59
+python-django, Compile time, 1.58
+python-django, Compile time, 1.58
+python-django, Compile time, 1.54
+python-django, Compile time, 1.55
+python-django, Compile time, 1.54
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Compile time, 1.54
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Startup time, 2.97
 python-django, Memory Usage (Startup), 49.93
-python-django, Startup time, 3.77
-python-django, Memory Usage (Startup), 50.07
-python-django, Startup time, 3.79
-python-django, Memory Usage (Startup), 49.93
-python-django, Startup time, 3.77
-python-django, Memory Usage (Startup), 50.06
-python-django, Startup time, 3.74
-python-django, Memory Usage (Startup), 49.93
-python-django, Startup time, 3.83
-python-django, Memory Usage (Startup), 49.88
-python-django, Startup time, 3.83
-python-django, Memory Usage (Startup), 49.83
-python-django, Startup time, 3.83
-python-django, Memory Usage (Startup), 49.92
-python-django, Startup time, 3.83
-python-django, Memory Usage (Startup), 49.98
-python-django, Startup time, 3.76
-python-django, Memory Usage (Startup), 50.07
-python-django, Startup time, 3.79
-python-django, Memory Usage (Startup), 49.92
-python-django, Startup time, 3.84
+python-django, Startup time, 2.94
 python-django, Memory Usage (Startup), 50.04
-python-django, Startup time, 3.72
-python-django, Memory Usage (Startup), 50.04
-python-django, Startup time, 3.84
-python-django, Memory Usage (Startup), 49.9
-python-django, Startup time, 3.68
-python-django, Memory Usage (Startup), 49.94
-python-django, Startup time, 3.77
+python-django, Startup time, 2.93
 python-django, Memory Usage (Startup), 49.89
-python-django, Startup time, 3.88
-python-django, Memory Usage (Startup), 49.93
-python-django, Startup time, 3.81
-python-django, Memory Usage (Startup), 49.99
-python-django, Startup time, 3.84
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 50.02
+python-django, Startup time, 2.94
 python-django, Memory Usage (Startup), 49.94
-python-django, Startup time, 3.84
-python-django, Memory Usage (Startup), 50.03
-python-django, Startup time, 3.76
+python-django, Startup time, 2.97
+python-django, Memory Usage (Startup), 50
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.98
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 50.09
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.93
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 50.05
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.88
+python-django, Startup time, 2.98
+python-django, Memory Usage (Startup), 49.92
+python-django, Startup time, 2.94
 python-django, Memory Usage (Startup), 49.91
-python-django, Startup time, 3.93
-python-django, Memory Usage (Startup), 50.02
-python-django, Startup time, 3.79
-python-django, Memory Usage (Startup), 50.06
-python-django, Startup time, 3.79
-python-django, Memory Usage (Startup), 50.02
-python-django, Startup time, 3.72
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 50
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 50.09
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.93
+python-django, Startup time, 2.96
 python-django, Memory Usage (Startup), 49.86
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
-python-django, Memory Usage (Load), FAIL
-python-django, Load Time, FAIL
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.94
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.9
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 49.98
+python-django, Startup time, 2.97
+python-django, Memory Usage (Startup), 49.96
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.99
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 49.88
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 50
+python-django, Startup time, 2.93
+python-django, Memory Usage (Startup), 50.17
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 50.1
+python-django, Startup time, 2.91
+python-django, Memory Usage (Startup), 50.03
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.96
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.93
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.96
+python-django, Memory Usage (Load), 64.08
+python-django, Load Time, 76.02
+python-django, Memory Usage (Load), 64.22
+python-django, Load Time, 72.46
+python-django, Memory Usage (Load), 64.11
+python-django, Load Time, 74.04
+python-django, Memory Usage (Load), 62.42
+python-django, Load Time, 72.64
+python-django, Memory Usage (Load), 61.68
+python-django, Load Time, 72.91
+python-django, Memory Usage (Load), 62.18
+python-django, Load Time, 73.04
+python-django, Memory Usage (Load), 62.16
+python-django, Load Time, 73.15
+python-django, Memory Usage (Load), 62.45
+python-django, Load Time, 73.78
+python-django, Memory Usage (Load), 63.19
+python-django, Load Time, 73.43
+python-django, Memory Usage (Load), 62.71
+python-django, Load Time, 73.20
+python-django, Memory Usage (Load), 62.43
+python-django, Load Time, 73.04
+python-django, Memory Usage (Load), 63.69
+python-django, Load Time, 73.52
+python-django, Memory Usage (Load), 64.23
+python-django, Load Time, 73.95
+python-django, Memory Usage (Load), 63.92
+python-django, Load Time, 73.28
+python-django, Memory Usage (Load), 62.16
+python-django, Load Time, 74.10
+python-django, Memory Usage (Load), 63.22
+python-django, Load Time, 73.46
+python-django, Memory Usage (Load), 65.37
+python-django, Load Time, 73.76
+python-django, Memory Usage (Load), 63.73
+python-django, Load Time, 73.81
+python-django, Memory Usage (Load), 63.49
+python-django, Load Time, 72.94
+python-django, Memory Usage (Load), 64.24
+python-django, Load Time, 73.11
+python-django, Memory Usage (Load), 65.44
+python-django, Load Time, 73.12
+python-django, Memory Usage (Load), 62.89
+python-django, Load Time, 73.57
+python-django, Memory Usage (Load), 62.95
+python-django, Load Time, 72.85
+python-django, Memory Usage (Load), 62.48
+python-django, Load Time, 72.33
+python-django, Memory Usage (Load), 63.46
+python-django, Load Time, 72.54
+python-django, Memory Usage (Load), 62.97
+python-django, Load Time, 72.63
+python-django, Memory Usage (Load), 65.38
+python-django, Load Time, 73.36
+python-django, Memory Usage (Load), 62.84
+python-django, Load Time, 73.62
+python-django, Memory Usage (Load), 61.61
+python-django, Load Time, 73.51
+python-django, Memory Usage (Load), 65.5
+python-django, Load Time, 72.81
