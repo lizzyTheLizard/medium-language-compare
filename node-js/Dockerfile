@@ -1,5 +1,8 @@
 FROM node
 
-ADD src /src
-ADD node_modules /node_modules
-CMD node /src/main.js
+WORKDIR /usr/src/app
+COPY ./package.json .
+COPY ./package-lock.json .
+RUN npm install
+COPY ./src ./src
+CMD node ./src/main.js
