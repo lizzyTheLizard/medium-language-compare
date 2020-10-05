@@ -88,7 +88,6 @@ function compile(){
         ./gradlew $3
     elif [ "$2" = "npm" ]
     then
-        npm install
         npm run build
     elif [ "$2" = "go" ]
     then
