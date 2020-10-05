@@ -1,0 +1,1200 @@
+go, Compile time, 4.43
+go, Compile time, 4.32
+go, Compile time, 4.44
+go, Compile time, 4.23
+go, Compile time, 4.32
+go, Compile time, 4.10
+go, Compile time, 4.28
+go, Compile time, 4.15
+go, Compile time, 4.20
+go, Compile time, 3.83
+go, Compile time, 4.06
+go, Compile time, 4.04
+go, Compile time, 4.17
+go, Compile time, 4.27
+go, Compile time, 4.07
+go, Compile time, 4.21
+go, Compile time, 4.17
+go, Compile time, 4.20
+go, Compile time, 3.95
+go, Compile time, 4.08
+go, Compile time, 4.15
+go, Compile time, 4.28
+go, Compile time, 4.04
+go, Compile time, 4.08
+go, Compile time, 3.90
+go, Compile time, 3.99
+go, Compile time, 3.92
+go, Compile time, 4.13
+go, Compile time, 2.95
+go, Compile time, 2.26
+go, Startup time, 3.01
+go, Memory Usage (Startup), 5.145
+go, Startup time, 2.87
+go, Memory Usage (Startup), 7.039
+go, Startup time, 2.88
+go, Memory Usage (Startup), 7.035
+go, Startup time, 2.90
+go, Memory Usage (Startup), 5.09
+go, Startup time, 2.89
+go, Memory Usage (Startup), 5.113
+go, Startup time, 2.81
+go, Memory Usage (Startup), 7.105
+go, Startup time, 2.86
+go, Memory Usage (Startup), 7.035
+go, Startup time, 2.88
+go, Memory Usage (Startup), 7.031
+go, Startup time, 2.85
+go, Memory Usage (Startup), 7.051
+go, Startup time, 2.80
+go, Memory Usage (Startup), 7.074
+go, Startup time, 2.87
+go, Memory Usage (Startup), 5.086
+go, Startup time, 2.91
+go, Memory Usage (Startup), 5.141
+go, Startup time, 2.95
+go, Memory Usage (Startup), 5.07
+go, Startup time, 2.91
+go, Memory Usage (Startup), 7.121
+go, Startup time, 2.81
+go, Memory Usage (Startup), 7.02
+go, Startup time, 2.86
+go, Memory Usage (Startup), 7.09
+go, Startup time, 2.82
+go, Memory Usage (Startup), 7.07
+go, Startup time, 2.81
+go, Memory Usage (Startup), 7.07
+go, Startup time, 2.78
+go, Memory Usage (Startup), 7.102
+go, Startup time, 2.83
+go, Memory Usage (Startup), 7.094
+go, Startup time, 2.95
+go, Memory Usage (Startup), 5.133
+go, Startup time, 2.87
+go, Memory Usage (Startup), 7.055
+go, Startup time, 2.86
+go, Memory Usage (Startup), 7.051
+go, Startup time, 2.87
+go, Memory Usage (Startup), 7.09
+go, Startup time, 2.92
+go, Memory Usage (Startup), 7.125
+go, Startup time, 2.82
+go, Memory Usage (Startup), 7.07
+go, Startup time, 2.86
+go, Memory Usage (Startup), 5.062
+go, Startup time, 2.93
+go, Memory Usage (Startup), 5.145
+go, Startup time, 2.91
+go, Memory Usage (Startup), 7.047
+go, Startup time, 2.86
+go, Memory Usage (Startup), 7.055
+go, Memory Usage (Load), 26.08
+go, Load Time, 17.45
+go, Memory Usage (Load), 28.29
+go, Load Time, 18.89
+go, Memory Usage (Load), 36.39
+go, Load Time, 17.19
+go, Memory Usage (Load), 32.26
+go, Load Time, 17.52
+go, Memory Usage (Load), 36.15
+go, Load Time, 16.02
+go, Memory Usage (Load), 28.73
+go, Load Time, 18.08
+go, Memory Usage (Load), 28.2
+go, Load Time, 18.37
+go, Memory Usage (Load), 34.22
+go, Load Time, 17.15
+go, Memory Usage (Load), 30.81
+go, Load Time, 17.52
+go, Memory Usage (Load), 30.09
+go, Load Time, 18.42
+go, Memory Usage (Load), 30.18
+go, Load Time, 17.86
+go, Memory Usage (Load), 29.86
+go, Load Time, 18.44
+go, Memory Usage (Load), 28.76
+go, Load Time, 18.37
+go, Memory Usage (Load), 32.08
+go, Load Time, 18.71
+go, Memory Usage (Load), 30.91
+go, Load Time, 16.55
+go, Memory Usage (Load), 30.85
+go, Load Time, 17.73
+go, Memory Usage (Load), 22.48
+go, Load Time, 19.69
+go, Memory Usage (Load), 36.48
+go, Load Time, 16.99
+go, Memory Usage (Load), 34.24
+go, Load Time, 19.19
+go, Memory Usage (Load), 26.61
+go, Load Time, 17.31
+go, Memory Usage (Load), 30.84
+go, Load Time, 19.05
+go, Memory Usage (Load), 28.16
+go, Load Time, 18.48
+go, Memory Usage (Load), 32.22
+go, Load Time, 17.07
+go, Memory Usage (Load), 26.66
+go, Load Time, 18.30
+go, Memory Usage (Load), 33.25
+go, Load Time, 17.60
+go, Memory Usage (Load), 30.11
+go, Load Time, 18.22
+go, Memory Usage (Load), 26.6
+go, Load Time, 18.39
+go, Memory Usage (Load), 26.67
+go, Load Time, 18.09
+go, Memory Usage (Load), 32.97
+go, Load Time, 18.19
+go, Memory Usage (Load), 30.93
+go, Load Time, 17.75
+micronaut-jdk, Compile time, 29.81
+micronaut-jdk, Compile time, 24.13
+micronaut-jdk, Compile time, 24.36
+micronaut-jdk, Compile time, 23.29
+micronaut-jdk, Compile time, 23.36
+micronaut-jdk, Compile time, 23.42
+micronaut-jdk, Compile time, 24.35
+micronaut-jdk, Compile time, 24.40
+micronaut-jdk, Compile time, 24.31
+micronaut-jdk, Compile time, 24.46
+micronaut-jdk, Compile time, 24.35
+micronaut-jdk, Compile time, 24.46
+micronaut-jdk, Compile time, 31.77
+micronaut-jdk, Compile time, 24.96
+micronaut-jdk, Compile time, 24.18
+micronaut-jdk, Compile time, 24.27
+micronaut-jdk, Compile time, 24.14
+micronaut-jdk, Compile time, 24.38
+micronaut-jdk, Compile time, 24.24
+micronaut-jdk, Compile time, 24.39
+micronaut-jdk, Compile time, 25.35
+micronaut-jdk, Compile time, 24.33
+micronaut-jdk, Compile time, 24.42
+micronaut-jdk, Compile time, 24.40
+micronaut-jdk, Compile time, 24.36
+micronaut-jdk, Compile time, 32.85
+micronaut-jdk, Compile time, 25.21
+micronaut-jdk, Compile time, 24.27
+micronaut-jdk, Compile time, 24.06
+micronaut-jdk, Compile time, 23.20
+micronaut-jdk, Startup time, 5.89
+micronaut-jdk, Memory Usage (Startup), 146.8
+micronaut-jdk, Startup time, 6.13
+micronaut-jdk, Memory Usage (Startup), 149.9
+micronaut-jdk, Startup time, 6.37
+micronaut-jdk, Memory Usage (Startup), 153.5
+micronaut-jdk, Startup time, 6.22
+micronaut-jdk, Memory Usage (Startup), 153.5
+micronaut-jdk, Startup time, 5.97
+micronaut-jdk, Memory Usage (Startup), 146
+micronaut-jdk, Startup time, 6.06
+micronaut-jdk, Memory Usage (Startup), 150
+micronaut-jdk, Startup time, 5.99
+micronaut-jdk, Memory Usage (Startup), 150.4
+micronaut-jdk, Startup time, 6.25
+micronaut-jdk, Memory Usage (Startup), 152.2
+micronaut-jdk, Startup time, 6.07
+micronaut-jdk, Memory Usage (Startup), 149.6
+micronaut-jdk, Startup time, 6.20
+micronaut-jdk, Memory Usage (Startup), 155.4
+micronaut-jdk, Startup time, 6.06
+micronaut-jdk, Memory Usage (Startup), 150.6
+micronaut-jdk, Startup time, 6.00
+micronaut-jdk, Memory Usage (Startup), 150.6
+micronaut-jdk, Startup time, 5.89
+micronaut-jdk, Memory Usage (Startup), 140.7
+micronaut-jdk, Startup time, 6.14
+micronaut-jdk, Memory Usage (Startup), 151.3
+micronaut-jdk, Startup time, 6.10
+micronaut-jdk, Memory Usage (Startup), 152.1
+micronaut-jdk, Startup time, 6.10
+micronaut-jdk, Memory Usage (Startup), 150
+micronaut-jdk, Startup time, 6.46
+micronaut-jdk, Memory Usage (Startup), 159.5
+micronaut-jdk, Startup time, 5.96
+micronaut-jdk, Memory Usage (Startup), 150.5
+micronaut-jdk, Startup time, 5.97
+micronaut-jdk, Memory Usage (Startup), 149.1
+micronaut-jdk, Startup time, 5.98
+micronaut-jdk, Memory Usage (Startup), 151.5
+micronaut-jdk, Startup time, 5.97
+micronaut-jdk, Memory Usage (Startup), 150.6
+micronaut-jdk, Startup time, 6.17
+micronaut-jdk, Memory Usage (Startup), 151.5
+micronaut-jdk, Startup time, 6.43
+micronaut-jdk, Memory Usage (Startup), 149.6
+micronaut-jdk, Startup time, 5.94
+micronaut-jdk, Memory Usage (Startup), 150.6
+micronaut-jdk, Startup time, 5.95
+micronaut-jdk, Memory Usage (Startup), 151.4
+micronaut-jdk, Startup time, 5.97
+micronaut-jdk, Memory Usage (Startup), 150.2
+micronaut-jdk, Startup time, 6.04
+micronaut-jdk, Memory Usage (Startup), 151.2
+micronaut-jdk, Startup time, 6.05
+micronaut-jdk, Memory Usage (Startup), 146.3
+micronaut-jdk, Startup time, 5.99
+micronaut-jdk, Memory Usage (Startup), 143.8
+micronaut-jdk, Startup time, 6.38
+micronaut-jdk, Memory Usage (Startup), 148
+micronaut-jdk, Memory Usage (Load), 323.1
+micronaut-jdk, Load Time, 20.11
+micronaut-jdk, Memory Usage (Load), 324.8
+micronaut-jdk, Load Time, 20.25
+micronaut-jdk, Memory Usage (Load), 352.5
+micronaut-jdk, Load Time, 20.05
+micronaut-jdk, Memory Usage (Load), 310.8
+micronaut-jdk, Load Time, 20.17
+micronaut-jdk, Memory Usage (Load), 330.2
+micronaut-jdk, Load Time, 20.91
+micronaut-jdk, Memory Usage (Load), 339.2
+micronaut-jdk, Load Time, 19.83
+micronaut-jdk, Memory Usage (Load), 327.1
+micronaut-jdk, Load Time, 20.63
+micronaut-jdk, Memory Usage (Load), 307.3
+micronaut-jdk, Load Time, 19.75
+micronaut-jdk, Memory Usage (Load), 325.7
+micronaut-jdk, Load Time, 20.46
+micronaut-jdk, Memory Usage (Load), 293.8
+micronaut-jdk, Load Time, 19.51
+micronaut-jdk, Memory Usage (Load), 332.8
+micronaut-jdk, Load Time, 20.67
+micronaut-jdk, Memory Usage (Load), 315.8
+micronaut-jdk, Load Time, 20.30
+micronaut-jdk, Memory Usage (Load), 334.4
+micronaut-jdk, Load Time, 20.12
+micronaut-jdk, Memory Usage (Load), 326.1
+micronaut-jdk, Load Time, 20.94
+micronaut-jdk, Memory Usage (Load), 330.6
+micronaut-jdk, Load Time, 20.12
+micronaut-jdk, Memory Usage (Load), 312
+micronaut-jdk, Load Time, 20.81
+micronaut-jdk, Memory Usage (Load), 350
+micronaut-jdk, Load Time, 20.42
+micronaut-jdk, Memory Usage (Load), 312
+micronaut-jdk, Load Time, 20.43
+micronaut-jdk, Memory Usage (Load), 312.6
+micronaut-jdk, Load Time, 20.74
+micronaut-jdk, Memory Usage (Load), 329.6
+micronaut-jdk, Load Time, 20.49
+micronaut-jdk, Memory Usage (Load), 322.5
+micronaut-jdk, Load Time, 20.55
+micronaut-jdk, Memory Usage (Load), 333.1
+micronaut-jdk, Load Time, 19.76
+micronaut-jdk, Memory Usage (Load), 369.6
+micronaut-jdk, Load Time, 20.39
+micronaut-jdk, Memory Usage (Load), 337.5
+micronaut-jdk, Load Time, 20.20
+micronaut-jdk, Memory Usage (Load), 342.6
+micronaut-jdk, Load Time, 20.94
+micronaut-jdk, Memory Usage (Load), 334
+micronaut-jdk, Load Time, 20.38
+micronaut-jdk, Memory Usage (Load), 316.6
+micronaut-jdk, Load Time, 20.25
+micronaut-jdk, Memory Usage (Load), 336.9
+micronaut-jdk, Load Time, 20.71
+micronaut-jdk, Memory Usage (Load), 328.6
+micronaut-jdk, Load Time, 20.26
+micronaut-jdk, Memory Usage (Load), 312.5
+micronaut-jdk, Load Time, 20.97
+micronaut-graal, Compile time, 468.88
+micronaut-graal, Compile time, 446.38
+micronaut-graal, Compile time, 456.22
+micronaut-graal, Compile time, 457.11
+micronaut-graal, Compile time, 462.07
+micronaut-graal, Compile time, 447.95
+micronaut-graal, Compile time, 450.61
+micronaut-graal, Compile time, 462.46
+micronaut-graal, Compile time, 450.43
+micronaut-graal, Compile time, 452.33
+micronaut-graal, Compile time, 454.49
+micronaut-graal, Compile time, 456.97
+micronaut-graal, Compile time, 458.36
+micronaut-graal, Compile time, 448.12
+micronaut-graal, Compile time, 446.39
+micronaut-graal, Compile time, 451.42
+micronaut-graal, Compile time, 450.30
+micronaut-graal, Compile time, 447.64
+micronaut-graal, Compile time, 458.10
+micronaut-graal, Compile time, 459.73
+micronaut-graal, Compile time, 460.88
+micronaut-graal, Compile time, 448.21
+micronaut-graal, Compile time, 454.86
+micronaut-graal, Compile time, 459.11
+micronaut-graal, Compile time, 462.23
+micronaut-graal, Compile time, 449.70
+micronaut-graal, Compile time, 460.00
+micronaut-graal, Compile time, 462.79
+micronaut-graal, Compile time, 457.69
+micronaut-graal, Compile time, 453.71
+micronaut-graal, Startup time, 3.49
+micronaut-graal, Memory Usage (Startup), 36.29
+micronaut-graal, Startup time, 2.97
+micronaut-graal, Memory Usage (Startup), 38.12
+micronaut-graal, Startup time, 2.97
+micronaut-graal, Memory Usage (Startup), 34.2
+micronaut-graal, Startup time, 3.14
+micronaut-graal, Memory Usage (Startup), 38.12
+micronaut-graal, Startup time, 3.10
+micronaut-graal, Memory Usage (Startup), 36.15
+micronaut-graal, Startup time, 3.00
+micronaut-graal, Memory Usage (Startup), 38.15
+micronaut-graal, Startup time, 3.02
+micronaut-graal, Memory Usage (Startup), 36.21
+micronaut-graal, Startup time, 2.99
+micronaut-graal, Memory Usage (Startup), 34.12
+micronaut-graal, Startup time, 3.08
+micronaut-graal, Memory Usage (Startup), 38.17
+micronaut-graal, Startup time, 3.13
+micronaut-graal, Memory Usage (Startup), 34.25
+micronaut-graal, Startup time, 3.01
+micronaut-graal, Memory Usage (Startup), 32.16
+micronaut-graal, Startup time, 3.10
+micronaut-graal, Memory Usage (Startup), 32.21
+micronaut-graal, Startup time, 3.02
+micronaut-graal, Memory Usage (Startup), 30.23
+micronaut-graal, Startup time, 3.11
+micronaut-graal, Memory Usage (Startup), 38.16
+micronaut-graal, Startup time, 3.05
+micronaut-graal, Memory Usage (Startup), 38.08
+micronaut-graal, Startup time, 2.98
+micronaut-graal, Memory Usage (Startup), 36.13
+micronaut-graal, Startup time, 3.03
+micronaut-graal, Memory Usage (Startup), 34.18
+micronaut-graal, Startup time, 3.14
+micronaut-graal, Memory Usage (Startup), 38.12
+micronaut-graal, Startup time, 3.02
+micronaut-graal, Memory Usage (Startup), 32.2
+micronaut-graal, Startup time, 3.05
+micronaut-graal, Memory Usage (Startup), 36.11
+micronaut-graal, Startup time, 3.05
+micronaut-graal, Memory Usage (Startup), 34.19
+micronaut-graal, Startup time, 3.01
+micronaut-graal, Memory Usage (Startup), 36.19
+micronaut-graal, Startup time, 3.01
+micronaut-graal, Memory Usage (Startup), 34.22
+micronaut-graal, Startup time, 2.98
+micronaut-graal, Memory Usage (Startup), 36.18
+micronaut-graal, Startup time, 2.98
+micronaut-graal, Memory Usage (Startup), 36.14
+micronaut-graal, Startup time, 2.99
+micronaut-graal, Memory Usage (Startup), 36.14
+micronaut-graal, Startup time, 3.07
+micronaut-graal, Memory Usage (Startup), 34.18
+micronaut-graal, Startup time, 3.05
+micronaut-graal, Memory Usage (Startup), 30.15
+micronaut-graal, Startup time, 3.01
+micronaut-graal, Memory Usage (Startup), 36.14
+micronaut-graal, Startup time, 3.10
+micronaut-graal, Memory Usage (Startup), 38.19
+micronaut-graal, Memory Usage (Load), 341.1
+micronaut-graal, Load Time, 16.91
+micronaut-graal, Memory Usage (Load), 346
+micronaut-graal, Load Time, 15.41
+micronaut-graal, Memory Usage (Load), 339.1
+micronaut-graal, Load Time, 15.47
+micronaut-graal, Memory Usage (Load), 348.9
+micronaut-graal, Load Time, 15.91
+micronaut-graal, Memory Usage (Load), 344.1
+micronaut-graal, Load Time, 15.45
+micronaut-graal, Memory Usage (Load), 349.1
+micronaut-graal, Load Time, 15.96
+micronaut-graal, Memory Usage (Load), 341
+micronaut-graal, Load Time, 15.50
+micronaut-graal, Memory Usage (Load), 345
+micronaut-graal, Load Time, 15.73
+micronaut-graal, Memory Usage (Load), 344.2
+micronaut-graal, Load Time, 15.63
+micronaut-graal, Memory Usage (Load), 347.1
+micronaut-graal, Load Time, 15.73
+micronaut-graal, Memory Usage (Load), 340.1
+micronaut-graal, Load Time, 15.56
+micronaut-graal, Memory Usage (Load), 338
+micronaut-graal, Load Time, 15.55
+micronaut-graal, Memory Usage (Load), 345.1
+micronaut-graal, Load Time, 15.32
+micronaut-graal, Memory Usage (Load), 348.1
+micronaut-graal, Load Time, 15.72
+micronaut-graal, Memory Usage (Load), 347.1
+micronaut-graal, Load Time, 15.57
+micronaut-graal, Memory Usage (Load), 342
+micronaut-graal, Load Time, 15.21
+micronaut-graal, Memory Usage (Load), 345.1
+micronaut-graal, Load Time, 15.74
+micronaut-graal, Memory Usage (Load), 344.2
+micronaut-graal, Load Time, 16.50
+micronaut-graal, Memory Usage (Load), 343.5
+micronaut-graal, Load Time, 15.59
+micronaut-graal, Memory Usage (Load), 348.9
+micronaut-graal, Load Time, 15.39
+micronaut-graal, Memory Usage (Load), 348
+micronaut-graal, Load Time, 15.27
+micronaut-graal, Memory Usage (Load), 345.9
+micronaut-graal, Load Time, 15.68
+micronaut-graal, Memory Usage (Load), 348
+micronaut-graal, Load Time, 15.23
+micronaut-graal, Memory Usage (Load), 346.9
+micronaut-graal, Load Time, 15.81
+micronaut-graal, Memory Usage (Load), 339.1
+micronaut-graal, Load Time, 15.35
+micronaut-graal, Memory Usage (Load), 341.1
+micronaut-graal, Load Time, 15.50
+micronaut-graal, Memory Usage (Load), 340.1
+micronaut-graal, Load Time, 15.58
+micronaut-graal, Memory Usage (Load), 346.3
+micronaut-graal, Load Time, 15.67
+micronaut-graal, Memory Usage (Load), 341.4
+micronaut-graal, Load Time, 16.14
+micronaut-graal, Memory Usage (Load), 346.1
+micronaut-graal, Load Time, 15.28
+spring, Compile time, 21.49
+spring, Compile time, 17.55
+spring, Compile time, 17.55
+spring, Compile time, 17.62
+spring, Compile time, 16.93
+spring, Compile time, 17.60
+spring, Compile time, 17.57
+spring, Compile time, 17.79
+spring, Compile time, 17.71
+spring, Compile time, 16.85
+spring, Compile time, 17.40
+spring, Compile time, 17.66
+spring, Compile time, 17.63
+spring, Compile time, 17.47
+spring, Compile time, 17.54
+spring, Compile time, 17.87
+spring, Compile time, 17.49
+spring, Compile time, 17.89
+spring, Compile time, 16.93
+spring, Compile time, 16.73
+spring, Compile time, 17.55
+spring, Compile time, 17.57
+spring, Compile time, 17.68
+spring, Compile time, 17.70
+spring, Compile time, 18.00
+spring, Compile time, 16.69
+spring, Compile time, 17.58
+spring, Compile time, 17.77
+spring, Compile time, 17.78
+spring, Compile time, 17.81
+spring, Startup time, 10.85
+spring, Memory Usage (Startup), 165.8
+spring, Startup time, 9.53
+spring, Memory Usage (Startup), 161.5
+spring, Startup time, 9.76
+spring, Memory Usage (Startup), 155.1
+spring, Startup time, 10.03
+spring, Memory Usage (Startup), 145.5
+spring, Startup time, 10.21
+spring, Memory Usage (Startup), 158.2
+spring, Startup time, 9.33
+spring, Memory Usage (Startup), 157.3
+spring, Startup time, 9.74
+spring, Memory Usage (Startup), 155.6
+spring, Startup time, 9.66
+spring, Memory Usage (Startup), 151.6
+spring, Startup time, 9.75
+spring, Memory Usage (Startup), 157.4
+spring, Startup time, 9.62
+spring, Memory Usage (Startup), 155.3
+spring, Startup time, 9.21
+spring, Memory Usage (Startup), 157.7
+spring, Startup time, 9.36
+spring, Memory Usage (Startup), 157.9
+spring, Startup time, 9.67
+spring, Memory Usage (Startup), 157
+spring, Startup time, 9.91
+spring, Memory Usage (Startup), 157.6
+spring, Startup time, 9.67
+spring, Memory Usage (Startup), 159.1
+spring, Startup time, 9.91
+spring, Memory Usage (Startup), 153.1
+spring, Startup time, 9.88
+spring, Memory Usage (Startup), 156.1
+spring, Startup time, 9.61
+spring, Memory Usage (Startup), 168.1
+spring, Startup time, 10.00
+spring, Memory Usage (Startup), 155.8
+spring, Startup time, 9.88
+spring, Memory Usage (Startup), 157.1
+spring, Startup time, 9.12
+spring, Memory Usage (Startup), 155.3
+spring, Startup time, 9.89
+spring, Memory Usage (Startup), 156.9
+spring, Startup time, 9.92
+spring, Memory Usage (Startup), 156.5
+spring, Startup time, 9.65
+spring, Memory Usage (Startup), 154.9
+spring, Startup time, 9.97
+spring, Memory Usage (Startup), 174.1
+spring, Startup time, 10.35
+spring, Memory Usage (Startup), 155.8
+spring, Startup time, 9.31
+spring, Memory Usage (Startup), 160.6
+spring, Startup time, 9.88
+spring, Memory Usage (Startup), 155.7
+spring, Startup time, 9.60
+spring, Memory Usage (Startup), 153.2
+spring, Startup time, 9.61
+spring, Memory Usage (Startup), 153.5
+spring, Memory Usage (Load), 303.2
+spring, Load Time, 20.00
+spring, Memory Usage (Load), 316.6
+spring, Load Time, 19.44
+spring, Memory Usage (Load), 302.9
+spring, Load Time, 20.04
+spring, Memory Usage (Load), 304.9
+spring, Load Time, 19.63
+spring, Memory Usage (Load), 306
+spring, Load Time, 19.90
+spring, Memory Usage (Load), 318.5
+spring, Load Time, 19.97
+spring, Memory Usage (Load), 311.4
+spring, Load Time, 19.82
+spring, Memory Usage (Load), 302.4
+spring, Load Time, 19.61
+spring, Memory Usage (Load), 333.6
+spring, Load Time, 20.14
+spring, Memory Usage (Load), 317.6
+spring, Load Time, 19.71
+spring, Memory Usage (Load), 319.5
+spring, Load Time, 19.69
+spring, Memory Usage (Load), 310.8
+spring, Load Time, 20.15
+spring, Memory Usage (Load), 305.4
+spring, Load Time, 19.64
+spring, Memory Usage (Load), 336.7
+spring, Load Time, 19.51
+spring, Memory Usage (Load), 293.1
+spring, Load Time, 19.23
+spring, Memory Usage (Load), 292
+spring, Load Time, 20.05
+spring, Memory Usage (Load), 310.9
+spring, Load Time, 19.02
+spring, Memory Usage (Load), 316.9
+spring, Load Time, 19.88
+spring, Memory Usage (Load), 302.6
+spring, Load Time, 19.82
+spring, Memory Usage (Load), 298.2
+spring, Load Time, 19.69
+spring, Memory Usage (Load), 294.8
+spring, Load Time, 19.57
+spring, Memory Usage (Load), 308.7
+spring, Load Time, 19.22
+spring, Memory Usage (Load), 316.5
+spring, Load Time, 20.75
+spring, Memory Usage (Load), 319.5
+spring, Load Time, 19.99
+spring, Memory Usage (Load), 300.2
+spring, Load Time, 20.00
+spring, Memory Usage (Load), 355.4
+spring, Load Time, 19.39
+spring, Memory Usage (Load), 336.6
+spring, Load Time, 19.85
+spring, Memory Usage (Load), 303.9
+spring, Load Time, 19.42
+spring, Memory Usage (Load), 305.9
+spring, Load Time, 19.59
+spring, Memory Usage (Load), 322.6
+spring, Load Time, 19.81
+node-js, Compile time, 78.48
+node-js, Compile time, 40.66
+node-js, Compile time, 40.46
+node-js, Compile time, 40.64
+node-js, Compile time, 40.62
+node-js, Compile time, 41.14
+node-js, Compile time, 40.85
+node-js, Compile time, 40.67
+node-js, Compile time, 40.48
+node-js, Compile time, 40.27
+node-js, Compile time, 40.67
+node-js, Compile time, 40.43
+node-js, Compile time, 40.09
+node-js, Compile time, 40.81
+node-js, Compile time, 40.50
+node-js, Compile time, 40.31
+node-js, Compile time, 40.79
+node-js, Compile time, 40.55
+node-js, Compile time, 40.72
+node-js, Compile time, 40.47
+node-js, Compile time, 40.63
+node-js, Compile time, 40.36
+node-js, Compile time, 40.38
+node-js, Compile time, 40.22
+node-js, Compile time, 40.46
+node-js, Compile time, 40.41
+node-js, Compile time, 40.87
+node-js, Compile time, 40.50
+node-js, Compile time, 40.59
+node-js, Compile time, 40.91
+node-js, Startup time, 5.19
+node-js, Memory Usage (Startup), 18.52
+node-js, Startup time, 2.94
+node-js, Memory Usage (Startup), 18.04
+node-js, Startup time, 3.03
+node-js, Memory Usage (Startup), 17.99
+node-js, Startup time, 3.04
+node-js, Memory Usage (Startup), 17.92
+node-js, Startup time, 3.01
+node-js, Memory Usage (Startup), 18.04
+node-js, Startup time, 2.99
+node-js, Memory Usage (Startup), 18.15
+node-js, Startup time, 3.06
+node-js, Memory Usage (Startup), 18.09
+node-js, Startup time, 3.11
+node-js, Memory Usage (Startup), 20.18
+node-js, Startup time, 3.08
+node-js, Memory Usage (Startup), 18.08
+node-js, Startup time, 2.92
+node-js, Memory Usage (Startup), 18.09
+node-js, Startup time, 3.01
+node-js, Memory Usage (Startup), 18.16
+node-js, Startup time, 3.12
+node-js, Memory Usage (Startup), 17.98
+node-js, Startup time, 2.95
+node-js, Memory Usage (Startup), 22.07
+node-js, Startup time, 2.99
+node-js, Memory Usage (Startup), 18.01
+node-js, Startup time, 2.95
+node-js, Memory Usage (Startup), 18.05
+node-js, Startup time, 2.93
+node-js, Memory Usage (Startup), 18.12
+node-js, Startup time, 3.01
+node-js, Memory Usage (Startup), 20.08
+node-js, Startup time, 3.13
+node-js, Memory Usage (Startup), 20.05
+node-js, Startup time, 2.99
+node-js, Memory Usage (Startup), 18.07
+node-js, Startup time, 3.05
+node-js, Memory Usage (Startup), 17.88
+node-js, Startup time, 3.04
+node-js, Memory Usage (Startup), 18.21
+node-js, Startup time, 3.05
+node-js, Memory Usage (Startup), 18.11
+node-js, Startup time, 3.16
+node-js, Memory Usage (Startup), 17.91
+node-js, Startup time, 3.10
+node-js, Memory Usage (Startup), 20
+node-js, Startup time, 2.98
+node-js, Memory Usage (Startup), 18.14
+node-js, Startup time, 3.04
+node-js, Memory Usage (Startup), 17.95
+node-js, Startup time, 3.04
+node-js, Memory Usage (Startup), 17.87
+node-js, Startup time, 3.09
+node-js, Memory Usage (Startup), 17.95
+node-js, Startup time, 3.04
+node-js, Memory Usage (Startup), 17.88
+node-js, Startup time, 2.91
+node-js, Memory Usage (Startup), 18.08
+node-js, Memory Usage (Load), 106.8
+node-js, Load Time, 22.63
+node-js, Memory Usage (Load), 96.58
+node-js, Load Time, 22.24
+node-js, Memory Usage (Load), 106.8
+node-js, Load Time, 22.01
+node-js, Memory Usage (Load), 101
+node-js, Load Time, 22.18
+node-js, Memory Usage (Load), 98.33
+node-js, Load Time, 21.47
+node-js, Memory Usage (Load), 101.6
+node-js, Load Time, 22.04
+node-js, Memory Usage (Load), 106.9
+node-js, Load Time, 22.60
+node-js, Memory Usage (Load), 100.2
+node-js, Load Time, 21.55
+node-js, Memory Usage (Load), 103.9
+node-js, Load Time, 22.25
+node-js, Memory Usage (Load), 91.41
+node-js, Load Time, 22.27
+node-js, Memory Usage (Load), 102.5
+node-js, Load Time, 22.34
+node-js, Memory Usage (Load), 104
+node-js, Load Time, 22.30
+node-js, Memory Usage (Load), 97.52
+node-js, Load Time, 22.34
+node-js, Memory Usage (Load), 106
+node-js, Load Time, 21.65
+node-js, Memory Usage (Load), 89.8
+node-js, Load Time, 21.85
+node-js, Memory Usage (Load), 101.8
+node-js, Load Time, 21.77
+node-js, Memory Usage (Load), 103.5
+node-js, Load Time, 22.01
+node-js, Memory Usage (Load), 102.7
+node-js, Load Time, 21.71
+node-js, Memory Usage (Load), 101.9
+node-js, Load Time, 22.27
+node-js, Memory Usage (Load), 101.1
+node-js, Load Time, 21.75
+node-js, Memory Usage (Load), 109.3
+node-js, Load Time, 21.72
+node-js, Memory Usage (Load), 108.2
+node-js, Load Time, 21.78
+node-js, Memory Usage (Load), 98.55
+node-js, Load Time, 22.16
+node-js, Memory Usage (Load), 110.7
+node-js, Load Time, 21.65
+node-js, Memory Usage (Load), 97.46
+node-js, Load Time, 21.91
+node-js, Memory Usage (Load), 99.87
+node-js, Load Time, 22.16
+node-js, Memory Usage (Load), 106.7
+node-js, Load Time, 21.78
+node-js, Memory Usage (Load), 96.53
+node-js, Load Time, 21.59
+node-js, Memory Usage (Load), 104.3
+node-js, Load Time, 21.95
+node-js, Memory Usage (Load), 91.32
+node-js, Load Time, 22.01
+node-ts, Compile time, 152.55
+node-ts, Compile time, 119.21
+node-ts, Compile time, 118.84
+node-ts, Compile time, 117.95
+node-ts, Compile time, 119.20
+node-ts, Compile time, 118.42
+node-ts, Compile time, 119.98
+node-ts, Compile time, 118.28
+node-ts, Compile time, 119.27
+node-ts, Compile time, 120.24
+node-ts, Compile time, 119.50
+node-ts, Compile time, 118.83
+node-ts, Compile time, 119.56
+node-ts, Compile time, 118.87
+node-ts, Compile time, 120.59
+node-ts, Compile time, 118.62
+node-ts, Compile time, 119.20
+node-ts, Compile time, 119.64
+node-ts, Compile time, 119.37
+node-ts, Compile time, 119.79
+node-ts, Compile time, 119.47
+node-ts, Compile time, 119.99
+node-ts, Compile time, 119.79
+node-ts, Compile time, 119.56
+node-ts, Compile time, 118.51
+node-ts, Compile time, 119.95
+node-ts, Compile time, 119.30
+node-ts, Compile time, 121.04
+node-ts, Compile time, 119.84
+node-ts, Compile time, 119.88
+node-ts, Startup time, 3.10
+node-ts, Memory Usage (Startup), 18.07
+node-ts, Startup time, 2.95
+node-ts, Memory Usage (Startup), 18.14
+node-ts, Startup time, 3.02
+node-ts, Memory Usage (Startup), 17.95
+node-ts, Startup time, 2.96
+node-ts, Memory Usage (Startup), 17.86
+node-ts, Startup time, 2.99
+node-ts, Memory Usage (Startup), 18.02
+node-ts, Startup time, 3.16
+node-ts, Memory Usage (Startup), 18.06
+node-ts, Startup time, 2.95
+node-ts, Memory Usage (Startup), 18.17
+node-ts, Startup time, 2.98
+node-ts, Memory Usage (Startup), 17.88
+node-ts, Startup time, 2.95
+node-ts, Memory Usage (Startup), 18.01
+node-ts, Startup time, 3.02
+node-ts, Memory Usage (Startup), 18.01
+node-ts, Startup time, 3.01
+node-ts, Memory Usage (Startup), 17.85
+node-ts, Startup time, 3.07
+node-ts, Memory Usage (Startup), 17.97
+node-ts, Startup time, 3.00
+node-ts, Memory Usage (Startup), 18.03
+node-ts, Startup time, 3.07
+node-ts, Memory Usage (Startup), 18
+node-ts, Startup time, 3.07
+node-ts, Memory Usage (Startup), 17.94
+node-ts, Startup time, 3.04
+node-ts, Memory Usage (Startup), 18.01
+node-ts, Startup time, 2.96
+node-ts, Memory Usage (Startup), 18.06
+node-ts, Startup time, 3.01
+node-ts, Memory Usage (Startup), 19.79
+node-ts, Startup time, 2.99
+node-ts, Memory Usage (Startup), 17.93
+node-ts, Startup time, 3.01
+node-ts, Memory Usage (Startup), 17.97
+node-ts, Startup time, 3.09
+node-ts, Memory Usage (Startup), 18.16
+node-ts, Startup time, 3.03
+node-ts, Memory Usage (Startup), 18.12
+node-ts, Startup time, 2.99
+node-ts, Memory Usage (Startup), 18.14
+node-ts, Startup time, 2.99
+node-ts, Memory Usage (Startup), 17.96
+node-ts, Startup time, 3.01
+node-ts, Memory Usage (Startup), 18.08
+node-ts, Startup time, 3.00
+node-ts, Memory Usage (Startup), 17.95
+node-ts, Startup time, 2.99
+node-ts, Memory Usage (Startup), 17.83
+node-ts, Startup time, 3.01
+node-ts, Memory Usage (Startup), 17.95
+node-ts, Startup time, 2.93
+node-ts, Memory Usage (Startup), 18.01
+node-ts, Startup time, 2.94
+node-ts, Memory Usage (Startup), 17.99
+node-ts, Memory Usage (Load), 106.6
+node-ts, Load Time, 22.88
+node-ts, Memory Usage (Load), 106.5
+node-ts, Load Time, 22.76
+node-ts, Memory Usage (Load), 94.77
+node-ts, Load Time, 23.01
+node-ts, Memory Usage (Load), 109.4
+node-ts, Load Time, 22.87
+node-ts, Memory Usage (Load), 103.4
+node-ts, Load Time, 22.88
+node-ts, Memory Usage (Load), 106.1
+node-ts, Load Time, 22.65
+node-ts, Memory Usage (Load), 101.5
+node-ts, Load Time, 23.13
+node-ts, Memory Usage (Load), 111.6
+node-ts, Load Time, 22.64
+node-ts, Memory Usage (Load), 96.88
+node-ts, Load Time, 23.94
+node-ts, Memory Usage (Load), 112.7
+node-ts, Load Time, 23.68
+node-ts, Memory Usage (Load), 105.8
+node-ts, Load Time, 23.62
+node-ts, Memory Usage (Load), 93.77
+node-ts, Load Time, 23.54
+node-ts, Memory Usage (Load), 109.1
+node-ts, Load Time, 23.36
+node-ts, Memory Usage (Load), 106
+node-ts, Load Time, 22.81
+node-ts, Memory Usage (Load), 102.2
+node-ts, Load Time, 23.25
+node-ts, Memory Usage (Load), 100.1
+node-ts, Load Time, 23.15
+node-ts, Memory Usage (Load), 104.9
+node-ts, Load Time, 23.04
+node-ts, Memory Usage (Load), 102.3
+node-ts, Load Time, 23.02
+node-ts, Memory Usage (Load), 100.6
+node-ts, Load Time, 23.38
+node-ts, Memory Usage (Load), 99.18
+node-ts, Load Time, 22.41
+node-ts, Memory Usage (Load), 99.28
+node-ts, Load Time, 23.10
+node-ts, Memory Usage (Load), 101.7
+node-ts, Load Time, 22.64
+node-ts, Memory Usage (Load), 106.9
+node-ts, Load Time, 23.09
+node-ts, Memory Usage (Load), 93.89
+node-ts, Load Time, 23.14
+node-ts, Memory Usage (Load), 103.3
+node-ts, Load Time, 22.91
+node-ts, Memory Usage (Load), 103.2
+node-ts, Load Time, 22.79
+node-ts, Memory Usage (Load), 105.7
+node-ts, Load Time, 22.69
+node-ts, Memory Usage (Load), 112.3
+node-ts, Load Time, 22.96
+node-ts, Memory Usage (Load), 107.4
+node-ts, Load Time, 22.91
+node-ts, Memory Usage (Load), 104.1
+node-ts, Load Time, 22.97
+python-falcon, Compile time, 28.51
+python-falcon, Compile time, 1.98
+python-falcon, Compile time, 1.98
+python-falcon, Compile time, 1.92
+python-falcon, Compile time, 1.97
+python-falcon, Compile time, 1.94
+python-falcon, Compile time, 1.94
+python-falcon, Compile time, 1.95
+python-falcon, Compile time, 1.93
+python-falcon, Compile time, 1.93
+python-falcon, Compile time, 1.94
+python-falcon, Compile time, 2.03
+python-falcon, Compile time, 2.04
+python-falcon, Compile time, 1.96
+python-falcon, Compile time, 2.07
+python-falcon, Compile time, 1.97
+python-falcon, Compile time, 1.93
+python-falcon, Compile time, 1.96
+python-falcon, Compile time, 1.92
+python-falcon, Compile time, 2.02
+python-falcon, Compile time, 2.00
+python-falcon, Compile time, 1.97
+python-falcon, Compile time, 1.99
+python-falcon, Compile time, 1.91
+python-falcon, Compile time, 1.88
+python-falcon, Compile time, 1.88
+python-falcon, Compile time, 1.99
+python-falcon, Compile time, 1.94
+python-falcon, Compile time, 1.88
+python-falcon, Compile time, 1.89
+python-falcon, Startup time, 3.36
+python-falcon, Memory Usage (Startup), 28.76
+python-falcon, Startup time, 3.28
+python-falcon, Memory Usage (Startup), 28.71
+python-falcon, Startup time, 3.41
+python-falcon, Memory Usage (Startup), 28.79
+python-falcon, Startup time, 3.42
+python-falcon, Memory Usage (Startup), 28.6
+python-falcon, Startup time, 3.34
+python-falcon, Memory Usage (Startup), 28.71
+python-falcon, Startup time, 3.32
+python-falcon, Memory Usage (Startup), 28.71
+python-falcon, Startup time, 3.32
+python-falcon, Memory Usage (Startup), 28.85
+python-falcon, Startup time, 3.38
+python-falcon, Memory Usage (Startup), 28.5
+python-falcon, Startup time, 3.53
+python-falcon, Memory Usage (Startup), 28.63
+python-falcon, Startup time, 3.28
+python-falcon, Memory Usage (Startup), 28.62
+python-falcon, Startup time, 3.30
+python-falcon, Memory Usage (Startup), 28.62
+python-falcon, Startup time, 3.32
+python-falcon, Memory Usage (Startup), 28.55
+python-falcon, Startup time, 3.28
+python-falcon, Memory Usage (Startup), 28.04
+python-falcon, Startup time, 3.31
+python-falcon, Memory Usage (Startup), 28.65
+python-falcon, Startup time, 3.36
+python-falcon, Memory Usage (Startup), 28.62
+python-falcon, Startup time, 3.36
+python-falcon, Memory Usage (Startup), 28.63
+python-falcon, Startup time, 3.32
+python-falcon, Memory Usage (Startup), 28.59
+python-falcon, Startup time, 3.30
+python-falcon, Memory Usage (Startup), 28.59
+python-falcon, Startup time, 3.29
+python-falcon, Memory Usage (Startup), 28.69
+python-falcon, Startup time, 3.35
+python-falcon, Memory Usage (Startup), 28.53
+python-falcon, Startup time, 3.28
+python-falcon, Memory Usage (Startup), 28.74
+python-falcon, Startup time, 3.34
+python-falcon, Memory Usage (Startup), 28.62
+python-falcon, Startup time, 3.24
+python-falcon, Memory Usage (Startup), 28.66
+python-falcon, Startup time, 3.26
+python-falcon, Memory Usage (Startup), 28.63
+python-falcon, Startup time, 3.30
+python-falcon, Memory Usage (Startup), 28.54
+python-falcon, Startup time, 3.32
+python-falcon, Memory Usage (Startup), 28.67
+python-falcon, Startup time, 3.31
+python-falcon, Memory Usage (Startup), 28.77
+python-falcon, Startup time, 3.45
+python-falcon, Memory Usage (Startup), 28.87
+python-falcon, Startup time, 3.27
+python-falcon, Memory Usage (Startup), 28.66
+python-falcon, Startup time, 3.35
+python-falcon, Memory Usage (Startup), 28.57
+python-falcon, Memory Usage (Load), 30.99
+python-falcon, Load Time, 18.16
+python-falcon, Memory Usage (Load), 31.04
+python-falcon, Load Time, 18.05
+python-falcon, Memory Usage (Load), 31.03
+python-falcon, Load Time, 17.79
+python-falcon, Memory Usage (Load), 31.06
+python-falcon, Load Time, 18.02
+python-falcon, Memory Usage (Load), 31.07
+python-falcon, Load Time, 18.47
+python-falcon, Memory Usage (Load), 31.14
+python-falcon, Load Time, 18.22
+python-falcon, Memory Usage (Load), 31.04
+python-falcon, Load Time, 17.84
+python-falcon, Memory Usage (Load), 31.05
+python-falcon, Load Time, 17.73
+python-falcon, Memory Usage (Load), 31.14
+python-falcon, Load Time, 17.91
+python-falcon, Memory Usage (Load), 31.08
+python-falcon, Load Time, 17.97
+python-falcon, Memory Usage (Load), 31.07
+python-falcon, Load Time, 18.48
+python-falcon, Memory Usage (Load), 31.02
+python-falcon, Load Time, 18.42
+python-falcon, Memory Usage (Load), 31
+python-falcon, Load Time, 18.23
+python-falcon, Memory Usage (Load), 30.77
+python-falcon, Load Time, 18.34
+python-falcon, Memory Usage (Load), 30.98
+python-falcon, Load Time, 17.90
+python-falcon, Memory Usage (Load), 31.12
+python-falcon, Load Time, 18.53
+python-falcon, Memory Usage (Load), 31.08
+python-falcon, Load Time, 18.25
+python-falcon, Memory Usage (Load), 31.02
+python-falcon, Load Time, 17.68
+python-falcon, Memory Usage (Load), 31.12
+python-falcon, Load Time, 17.61
+python-falcon, Memory Usage (Load), 31.1
+python-falcon, Load Time, 17.67
+python-falcon, Memory Usage (Load), 31.06
+python-falcon, Load Time, 18.58
+python-falcon, Memory Usage (Load), 31.08
+python-falcon, Load Time, 17.86
+python-falcon, Memory Usage (Load), 31.04
+python-falcon, Load Time, 18.15
+python-falcon, Memory Usage (Load), 31.11
+python-falcon, Load Time, 17.58
+python-falcon, Memory Usage (Load), 31.3
+python-falcon, Load Time, 18.19
+python-falcon, Memory Usage (Load), 31.16
+python-falcon, Load Time, 17.61
+python-falcon, Memory Usage (Load), 31.03
+python-falcon, Load Time, 17.60
+python-falcon, Memory Usage (Load), 30.92
+python-falcon, Load Time, 18.08
+python-falcon, Memory Usage (Load), 31.02
+python-falcon, Load Time, 17.69
+python-falcon, Memory Usage (Load), 31.12
+python-falcon, Load Time, 17.55
+python-django, Compile time, 5.01
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.57
+python-django, Compile time, 1.58
+python-django, Compile time, 1.57
+python-django, Compile time, 1.59
+python-django, Compile time, 1.59
+python-django, Compile time, 1.59
+python-django, Compile time, 1.58
+python-django, Compile time, 1.58
+python-django, Compile time, 1.54
+python-django, Compile time, 1.55
+python-django, Compile time, 1.54
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Compile time, 1.54
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.56
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Compile time, 1.55
+python-django, Startup time, 2.97
+python-django, Memory Usage (Startup), 49.93
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 50.04
+python-django, Startup time, 2.93
+python-django, Memory Usage (Startup), 49.89
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 50.02
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.94
+python-django, Startup time, 2.97
+python-django, Memory Usage (Startup), 50
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.98
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 50.09
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.93
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 50.05
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.88
+python-django, Startup time, 2.98
+python-django, Memory Usage (Startup), 49.92
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.91
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 50
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 50.09
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.93
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 49.86
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.94
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.9
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 49.98
+python-django, Startup time, 2.97
+python-django, Memory Usage (Startup), 49.96
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.99
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 49.88
+python-django, Startup time, 2.96
+python-django, Memory Usage (Startup), 50
+python-django, Startup time, 2.93
+python-django, Memory Usage (Startup), 50.17
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 50.1
+python-django, Startup time, 2.91
+python-django, Memory Usage (Startup), 50.03
+python-django, Startup time, 2.95
+python-django, Memory Usage (Startup), 49.96
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.93
+python-django, Startup time, 2.94
+python-django, Memory Usage (Startup), 49.96
+python-django, Memory Usage (Load), 64.08
+python-django, Load Time, 76.02
+python-django, Memory Usage (Load), 64.22
+python-django, Load Time, 72.46
+python-django, Memory Usage (Load), 64.11
+python-django, Load Time, 74.04
+python-django, Memory Usage (Load), 62.42
+python-django, Load Time, 72.64
+python-django, Memory Usage (Load), 61.68
+python-django, Load Time, 72.91
+python-django, Memory Usage (Load), 62.18
+python-django, Load Time, 73.04
+python-django, Memory Usage (Load), 62.16
+python-django, Load Time, 73.15
+python-django, Memory Usage (Load), 62.45
+python-django, Load Time, 73.78
+python-django, Memory Usage (Load), 63.19
+python-django, Load Time, 73.43
+python-django, Memory Usage (Load), 62.71
+python-django, Load Time, 73.20
+python-django, Memory Usage (Load), 62.43
+python-django, Load Time, 73.04
+python-django, Memory Usage (Load), 63.69
+python-django, Load Time, 73.52
+python-django, Memory Usage (Load), 64.23
+python-django, Load Time, 73.95
+python-django, Memory Usage (Load), 63.92
+python-django, Load Time, 73.28
+python-django, Memory Usage (Load), 62.16
+python-django, Load Time, 74.10
+python-django, Memory Usage (Load), 63.22
+python-django, Load Time, 73.46
+python-django, Memory Usage (Load), 65.37
+python-django, Load Time, 73.76
+python-django, Memory Usage (Load), 63.73
+python-django, Load Time, 73.81
+python-django, Memory Usage (Load), 63.49
+python-django, Load Time, 72.94
+python-django, Memory Usage (Load), 64.24
+python-django, Load Time, 73.11
+python-django, Memory Usage (Load), 65.44
+python-django, Load Time, 73.12
+python-django, Memory Usage (Load), 62.89
+python-django, Load Time, 73.57
+python-django, Memory Usage (Load), 62.95
+python-django, Load Time, 72.85
+python-django, Memory Usage (Load), 62.48
+python-django, Load Time, 72.33
+python-django, Memory Usage (Load), 63.46
+python-django, Load Time, 72.54
+python-django, Memory Usage (Load), 62.97
+python-django, Load Time, 72.63
+python-django, Memory Usage (Load), 65.38
+python-django, Load Time, 73.36
+python-django, Memory Usage (Load), 62.84
+python-django, Load Time, 73.62
+python-django, Memory Usage (Load), 61.61
+python-django, Load Time, 73.51
+python-django, Memory Usage (Load), 65.5
+python-django, Load Time, 72.81
